@@ -1,0 +1,316 @@
+can_use_alchemy = {
+}
+
+can_use_restoration = {
+}
+
+##### Specialization-locked spells
+### If school is main skill of the specialization (using the classes from Morrowind) then it starts from spe_1 to spe_3
+### If school is secondary skill of the specialization (same), then it starts from spe_2 to spe_3. So you can't cast master spells from a secondary school
+
+### Alteration
+can_use_alteration = {
+	OR = {
+		can_use_alteration_journeyman = yes
+		can_use_alteration_expert = yes
+		can_use_alteration_master = yes
+	}
+}
+
+can_use_alteration_journeyman = {
+	OR = {
+		is_battlemage = yes
+		is_healer = yes
+		is_nightblade = yes
+		is_priest_education = yes
+		is_spellsword = yes
+	}
+}
+
+can_use_alteration_expert = {
+	OR = {
+		trait = battlemage_2
+		trait = battlemage_3
+		trait = healer_2
+		trait = healer_3
+		trait = nightblade_2
+		trait = nightblade_3
+		trait = priest_2
+		trait = priest_3
+		trait = spellsword_2
+		trait = spellsword_3
+	}
+}
+
+can_use_alteration_master = {
+	OR = {
+		trait = battlemage_3
+		trait = healer_3
+		trait = nightblade_3
+		trait = priest_3
+		trait = spellsword_3
+	}
+}
+
+### Conjuration
+can_use_conjuration = {
+	OR = {
+		can_use_conjuration_journeyman = yes
+		can_use_conjuration_expert = yes
+		can_use_conjuration_master = yes
+	}
+}
+
+can_use_conjuration_journeyman = {
+	OR = {
+		is_battlemage = yes
+		is_sorcerer = yes
+		is_witchhunter = yes
+		trait = priest_2
+		trait = priest_3
+		
+		trait = necromancer
+	}
+}
+
+can_use_conjuration_expert = {
+	OR = {
+		trait = battlemage_2
+		trait = battlemage_3
+		trait = sorcerer_2
+		trait = sorcerer_3
+		trait = witchhunter_2
+		trait = witchhunter_3
+		trait = priest_3
+		
+		trait = necromancer
+	}
+}
+
+can_use_conjuration_legendary = {
+	OR = {
+		trait = battlemage_3
+		trait = sorcerer_3
+		traut = witchhunter_3
+		
+		trait = necromancer
+	}
+}
+
+### Destruction
+can_use_destruction = {
+	OR = {
+		can_use_destruction_journeyman = yes
+		can_use_destruction_expert = yes
+		can_use_destruction_master = yes
+	}
+}
+
+can_use_destruction_journeyman = {
+	OR = {
+		is_battlemage = yes
+		is_crusader = yes
+		is_sorcerer = yes
+		is_spellsword = yes
+		trait = nightblade_2
+		trait = nightblade_3
+		trait = priest_2
+		trait = priest_3
+	}
+}
+
+can_use_destruction_expert = {
+	OR = {
+		trait = battlemage_2
+		trait = battlemage_3
+		trait = crusader_2
+		trait = crusader_3
+		trait = sorcerer_2
+		trait = sorcerer_3
+		trait = spellsword_2
+		trait = spellsword_3
+		trait = nightblade_3
+		trait = priest_3
+	}
+}
+
+can_use_destruction_legendary = {
+	OR = {
+		trait = battlemage_3
+		trait = crusader_3
+		trait = sorcerer_3
+		traut = spellsword_3
+	}
+}
+
+### Enchanting
+can_use_enchanting = {
+	OR = {
+		can_use_enchanting_journeyman = yes
+		can_use_enchanting_expert = yes
+		can_use_enchanting_master = yes
+	}
+}
+
+can_use_enchanting_journeyman = {
+	OR = {
+		is_sorcerer = yes
+		is_witchhunter = yes
+		trait = bard_2
+		trait = bard_3
+		trait = battlemage_2
+		trait = battlemage_3
+		trait = knight_2
+		trait = knight_3
+		trait = spellsword_2
+		trait = spellsword_3
+	}
+}
+
+can_use_enchanting_expert = {
+	OR = {
+		trait = sorcerer_2
+		trait = sorcerer_3
+		trait = witchhunter_2
+		trait = witchhunter_3
+		trait = bard_3
+		trait = battlemage_3
+		trait = knight_3
+		trait = spellsword_3
+	}
+}
+
+can_use_enchanting_legendary = {
+	OR = {
+		trait = sorcerer_3
+		trait = witchhunter_3
+	}
+}
+
+### Illusion
+can_use_illusion = {
+	OR = {
+		can_use_illusion_journeyman = yes
+		can_use_illusion_expert = yes
+		can_use_illusion_master = yes
+	}
+}
+
+can_use_illusion_journeyman = {
+	OR = {
+		is_nightblade = yes
+		trait = bard_2
+		trait = bard_3
+		trait = healer_2
+		trait = healer_3
+		trait = sorcerer_2
+		trait = sorcerer_3
+	}
+}
+
+can_use_illusion_expert = {
+	OR = {
+		trait = nightblade_2
+		trait = nightblade_3
+		trait = bard_3
+		trait = healer_3
+		trait = sorcerer_3
+	}
+}
+
+can_use_illusion_legendary = {
+	OR = {
+		trait = nightblade_3
+	}
+}
+
+### Mysticism
+can_use_mysticism = {
+	OR = {
+		can_use_mysticism_journeyman = yes
+		can_use_mysticism_expert = yes
+		can_use_mysticism_master = yes
+	}
+}
+
+can_use_mysticism_journeyman = {
+	OR = {
+		is_healer = yes
+		is_nightblade = yes
+		is_priest_education = yes
+		is_sorcerer = yes
+		trait = battlemage_2
+		trait = battlemage_3
+		trait = witchhunter_2
+		trait = witchhunter_3
+	}
+}
+
+can_use_mysticism_expert = {
+	OR = {
+		trait = healer_2
+		trait = healer_3
+		trait = nightblade_2
+		trait = nightblade_3
+		trait = priest_2
+		trait = priest_3
+		trait = sorcerer_2
+		trait = sorcerer_3
+		trait = battlemage_3
+		trait = witchhunter_3
+	}
+}
+
+can_use_mysticism_legendary = {
+	OR = {
+		trait = healer_3
+		trait = nightblade_3
+		trait = priest_3
+		trait = sorcerer_3
+	}
+}
+
+### Restoration
+can_use_restoration = {
+	OR = {
+		can_use_restoration_journeyman = yes
+		can_use_restoration_expert = yes
+		can_use_restoration_master = yes
+	}
+}
+
+can_use_restoration_journeyman = {
+	OR = {
+		is_healer = yes
+		is_priest_education = yes
+		is_spellsword = yes
+		trait = crusader_2
+		trait = crusader_3
+		trait = knight_2
+		trait = knight_3
+		trait = monk_2
+		trait = monk_3
+	}
+}
+
+can_use_restoration_expert = {
+	OR = {
+		trait = healer_2
+		trait = healer_3
+		trait = priest_2
+		trait = priest_3
+		trait = spellsword_2
+		trait = spellsword_3
+		trait = crusader_3
+		trait = knight_3
+		trait = monk_3
+	}
+}
+
+can_use_restoration_legendary = {
+	OR = {
+		trait = healer_3
+		trait = priest_3
+		trait = spellsword_3
+	}
+}

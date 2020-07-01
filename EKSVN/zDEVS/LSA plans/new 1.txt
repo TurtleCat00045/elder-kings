@@ -1,0 +1,25 @@
+Old Gods => Reign in the Hagraven Cultists: Give Scarhammer to the Hagravens
+Hagraven Cultists => Become the dominant faith
+
+UPHOLD FAOLAN LEGACY:
+	DE JURE REACH FORMED
+	REACH FAITHS UNIFIED
+	DEFEATED THE GHOST OF THE RED EAGLE
+	
+	#Territory: 	Whole Reach controlled
+	#Military: 	De Jure Reach formed
+	#Religious: 	Holy Order formed + unified the Faiths
+	#Personal:	Fight the ghost of the Red Eagle
+
+Make de Jure Reach:
+	Force [Root.Culture] to be dominant (?)
+	Send ultimatum: Accept the de Jure Reach or fight (Skyrim and High Rock)
+		Most rulers will fight, except Reachmen or +50 opinion rulers in Skyrim or High Rock
+	
+	#One of these
+	#	Diplo: 			Same as current
+	#	Military:		Demand the other powers of Skyrim / High Rock to abandon their claim, through war if necessary (most will go to war)
+	#	Elder Council: 	Same as current
+
+Reach Faiths unified:
+	Reformation-like (but event driven?)

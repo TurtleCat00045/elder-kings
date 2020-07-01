@@ -1,0 +1,92 @@
+opinion_of_dragon_paarthurnax = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+opinion_of_greybeard = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+opinion_of_dragonborn = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+opinion_of_dragon_alduin = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+
+vain_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+hedonist_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+envious_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+impaler_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+skooma_addiction_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+opinion_of_warlord = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+theologian_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+gladiator_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}
+engineer_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = yes
+	max_decimals = 0
+}

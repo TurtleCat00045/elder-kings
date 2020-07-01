@@ -1,0 +1,28 @@
+open_magicka_slots;Magicka - Passives;;;;;;;;;;;;;x
+open_magicka_slots_desc;Use your magical abilities to strenghten your capacities and characteristics.\nThose are passive bonuses, whose potency depends on both your spellcasting abilities, defined by your Mage education rank and/or the specializations you trained in.\nThe number of bonuses you can have at the same time is limited to your Mage education rank, and generic spellcasters lacking a formal Mage education will be treated as Novice Mages for this purpose.;;;;;;;;;;;;;x
+spell_boost_dip;Fortify Speechcraft;;;;;;;;;;;;;x
+spell_boost_dip_desc;Cast Fortify Speechcraft, boosting your Diplomacy.;;;;;;;;;;;;;x
+spell_boost_mar;Fortify Strength;;;;;;;;;;;;;x
+spell_boost_mar_desc;Cast Fortify Strength, boosting your Martial;;;;;;;;;;;;;x
+spell_boost_ste;Fortify Mercantile;;;;;;;;;;;;;x
+spell_boost_ste_desc;Cast Fortify Mercantile, boosting your Stewardship;;;;;;;;;;;;;x
+spell_boost_int;Fortify Sneak;;;;;;;;;;;;;x
+spell_boost_int_desc;Cast Fortify Sneak, boosting your Intrigue;;;;;;;;;;;;;x
+spell_boost_lea;Fortify Intelligence;;;;;;;;;;;;;x
+spell_boost_lea_desc;Cast Fortify Intelligence, boosting your target's Learning;;;;;;;;;;;;;x
+HAS_ONE_TAKEN_SLOTS_CT;Is already using §Yone§! magicka passive bonuses slot;;;;;;;;;;;;;x
+HAS_TWO_TAKEN_SLOTS_CT;Is already using §Ytwo§! magicka passive bonuses slots;;;;;;;;;;;;;x
+HAS_THREE_TAKEN_SLOTS_CT;Is already using §Ythree§! magicka passive bonuses slots;;;;;;;;;;;;;x
+HAS_ALL_SLOTS_TAKEN_CT;Is already using §!all the available§! magicka passive bonuses slots;;;;;;;;;;;;;x
+IS_BOOSTING_DIP_MAGICKA_CT;Is already boosting [Root.GetHerHis] Diplomacy;;;;;;;;;;;;;x
+IS_BOOSTING_MAR_MAGICKA_CT;Is already boosting [Root.GetHerHis] Martial;;;;;;;;;;;;;x
+IS_BOOSTING_STE_MAGICKA_CT;Is already boosting [Root.GetHerHis] Stewardship;;;;;;;;;;;;;x
+IS_BOOSTING_INT_MAGICKA_CT;Is already boosting [Root.GetHerHis] Intrigue;;;;;;;;;;;;;x
+IS_BOOSTING_LEA_MAGICKA_CT;Is already boosting [Root.GetHerHis] Learning;;;;;;;;;;;;;x
+CAN_UPDATE_MAGICKA_SLOTS_CT;Has either an open magicka slot, or has chosen a bonus at least §Y5 years§! ago.\n\nIf all passive slots are already taken, you will have to remove a magicka passive bonus when taking an additional one.;;;;;;;;;;;;;x
+ek_magicka.1.d;My reserves of magicka aren't unlimited, and I can only use my magical abilities so much. I will have to draw energy from one area to strengthen another.;;;;;;;;;;;;;x
+ek_magicka.1.dip;I don't need my Fortify Speechcraft anymore.;;;;;;;;;;;;;x
+ek_magicka.1.mar;I don't need my Fortify Strength anymore.;;;;;;;;;;;;;x
+ek_magicka.1.ste;I don't need my Fortify Mercantile anymore.;;;;;;;;;;;;;x
+ek_magicka.1.int;I don't need my Fortify Sneak anymore.;;;;;;;;;;;;;x
+ek_magicka.1.lea;I don't need my Fortify Intelligence anymore.;;;;;;;;;;;;;x

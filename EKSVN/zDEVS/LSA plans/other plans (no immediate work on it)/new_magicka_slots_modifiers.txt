@@ -1,0 +1,107 @@
+### Regular boosts
+magicka_boost_dip_1 = {
+	icon = 3
+	diplomacy = 1
+}
+
+magicka_boost_dip_2 = {
+	icon = 3
+	diplomacy = 2
+}
+
+magicka_boost_dip_3 = {
+	icon = 3
+	diplomacy = 4
+}
+
+magicka_boost_mar_1 = {
+	icon = 1
+	martial = 1
+}
+
+magicka_boost_mar_2 = {
+	icon = 1
+	martial = 2
+}
+
+magicka_boost_mar_3 = {
+	icon = 1
+	martial = 4
+}
+
+magicka_boost_ste_1 = {
+	icon = 4
+	stewardship = 1
+}
+
+magicka_boost_ste_2 = {
+	icon = 4
+	stewardship = 2
+}
+
+magicka_boost_ste_3 = {
+	icon = 4
+	stewardship = 4
+}
+
+magicka_boost_int_1 = {
+	icon = 5
+	intrigue = 1
+}
+
+magicka_boost_int_2 = {
+	icon = 5
+	intrigue = 2
+}
+
+magicka_boost_int_3 = {
+	icon = 5
+	intrigue = 4
+}
+
+magicka_boost_lea_1 = {
+	icon = 8
+	learning = 1
+}
+
+magicka_boost_lea_2 = {
+	icon = 8
+	learning = 2
+}
+
+magicka_boost_lea_3 = {
+	icon = 8
+	learning = 4
+}
+
+magicka_boost_pcs_1 = {
+	icon = 9
+	combat_rating = 10
+}
+
+magicka_boost_pcs_2 = {
+	icon = 9
+	combat_rating = 20
+}
+
+magicka_boost_pcs_3 = {
+	icon = 9
+	combat_rating = 30
+}
+
+magicka_boost_income_1 = {
+	icon = 6
+	global_tax_modifier = 0.05
+}
+
+magicka_boost_income_2 = {
+	icon = 6
+	global_tax_modifier = 0.1
+}
+
+magicka_boost_income_3 = {
+	icon = 6
+	global_tax_modifier = 0.15
+}
+
+### Special boosts

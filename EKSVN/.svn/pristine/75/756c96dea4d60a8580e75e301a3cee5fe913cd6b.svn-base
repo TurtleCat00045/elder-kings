@@ -1,0 +1,262 @@
+decisions = {
+	summon_dragon_army_0 = {
+		is_high_prio = yes
+		only_playable = yes
+		potential = {
+			is_landed = yes
+			religion_can_summon_dragons = yes
+			has_submenu_open = no
+			piety = 500
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { trait = undead }
+					piety = 750
+				}
+				AND = {
+					trait = undead
+					piety = 1500
+				}
+			}
+			prisoner = no
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { trait = undead }
+				}
+				piety = -750
+			}
+			if = {
+				limit = {
+					trait = undead
+				}
+				piety = -1500
+			}
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops = {
+							dragon = { 100 100 }
+						}
+						attrition = 0
+						maintenance_multiplier = 0.5
+						reinforces = yes
+						earmark = dragon_cult_dragon_0
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+		}
+	}
+	summon_dragon_army_1 = {
+		is_high_prio = yes
+		only_playable = yes
+		potential = {
+			is_landed = yes
+			religion_can_summon_dragons = yes
+			has_submenu_open = no
+			piety = 1000
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { trait = undead }
+					piety = 1500
+				}
+				AND = {
+					trait = undead
+					piety = 3000
+				}
+			}
+			prisoner = no
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { trait = undead }
+				}
+				piety = -1500
+			}
+			if = {
+				limit = {
+					trait = undead
+				}
+				piety = -3000
+			}
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops = {
+							dragon = { 200 200 }
+						}
+						attrition = 0
+						maintenance_multiplier = 0.5
+						reinforces = yes
+						earmark = dragon_cult_dragon_1
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+		}
+	}
+	summon_dragon_army_2 = {
+		is_high_prio = yes
+		only_playable = yes
+		potential = {
+			is_landed = yes
+			religion_can_summon_dragons = yes
+			has_submenu_open = no
+			piety = 1750
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { trait = undead }
+					piety = 2500
+				}
+				AND = {
+					trait = undead
+					piety = 5000
+				}
+			}
+			prisoner = no
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { trait = undead }
+				}
+				piety = -2500
+			}
+			if = {
+				limit = {
+					trait = undead
+				}
+				piety = -5000
+			}
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops = {
+							dragon = { 400 400 }
+						}
+						attrition = 0
+						maintenance_multiplier = 0.5
+						reinforces = yes
+						earmark = dragon_cult_dragon_2
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+		}
+	}
+	summon_dragon_army_3 = {
+		is_high_prio = yes
+		only_playable = yes
+		potential = {
+			is_landed = yes
+			religion_can_summon_dragons = yes
+			has_submenu_open = no
+			piety = 2500
+		}
+		allow = {
+			OR = {
+				AND = {
+					NOT = { trait = undead }
+					piety = 4000
+				}
+				AND = {
+					trait = undead
+					piety = 8000
+				}
+			}
+			prisoner = no
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { trait = undead }
+				}
+				piety = -4000
+			}
+			if = {
+				limit = {
+					trait = undead
+				}
+				piety = -8000
+			}
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						troops = {
+							dragon = { 800 800 }
+						}
+						attrition = 0
+						maintenance_multiplier = 0.5
+						reinforces = yes
+						earmark = dragon_cult_dragon_3
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			
+			modifier = {
+				factor = 5
+				trait = zealous
+			}
+			modifier = {
+				factor = 5
+				trait = ambitious
+			}
+		}
+	}
+}

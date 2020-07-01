@@ -1,0 +1,36 @@
+Commander traits level
+
+Bloodkins / Orsimer status
+	Laws about Orsimer acceptance
+		- Animals (no land, can't stay in a court)
+		- Tolerated (no land, can stay in a court)
+		- Accepted (can hold land, can stay in a court)
+	Bloodkin trait, giving massive Orsimer opinion
+	
+Dragon Priests + Dragon Worship revival
+
+Legacy of Reman
+
+Orgnum / Divinity
+	Divine power
+		Can be used to maintain a divine status (massive stat boost)
+		Gained by
+			Number of worshippers (Patron trait)
+			Number of provinces
+			Number of holy sites
+			Number of Towers
+		Can call for Crusades (think invasion of Alinor by Orgnum)
+	
+Religious reforms
+	Fringe religion
+	Necromancy
+
+Duel rework
+	Magic / Ranged combat / Close combat
+	PCS + traits, personality, bloodlines, artifacts having an impact
+		=> Altmer more efficient in attack if they choose Magic
+		=> Bretons more efficient in defense if their opponent choose Magic
+	
+	Turn by turn
+		Each turn, decide what to do
+			Uses stamina and/or magic depending on the kind of combat style

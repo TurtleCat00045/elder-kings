@@ -1,0 +1,236 @@
+decisions = {
+	spell_boost_dip = {
+		potential = {
+			ai = no
+			is_spellcaster = yes
+			has_character_flag = magickaslots_open
+			NOT = { is_boosting_dip_magicka = yes }
+		}
+		
+		allow = {
+			can_update_magicka_slots = yes
+		}
+		
+		effect = {
+			character_event = { id = ek_magicka.1 }
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { is_mage = yes }
+						trait = mage_1
+					}
+				}
+				add_character_modifier = { name = magicka_boost_dip_1 duration = -1 }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_2
+						trait = mage_3
+					}
+				}
+				add_character_modifier = { name = magicka_boost_dip_2 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_4
+						trait = mage_5
+					}
+				}
+				add_character_modifier = { name = magicka_boost_dip_3 duration = -1  }
+			}
+		}
+	}
+	
+	spell_boost_mar = {
+		potential = {
+			ai = no
+			is_spellcaster = yes
+			has_character_flag = magickaslots_open
+			NOT = { is_boosting_mar_magicka = yes }
+		}
+		
+		allow = {
+			can_update_magicka_slots = yes
+		}
+		
+		effect = {
+			character_event = { id = ek_magicka.1 }
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { is_mage = yes }
+						trait = mage_1
+					}
+				}
+				add_character_modifier = { name = magicka_boost_mar_1 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_2
+						trait = mage_3
+					}
+				}
+				add_character_modifier = { name = magicka_boost_mar_2 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_4
+						trait = mage_5
+					}
+				}
+				add_character_modifier = { name = magicka_boost_mar_3 duration = -1  }
+			}
+		}
+	}
+	
+	spell_boost_ste = {
+		potential = {
+			ai = no
+			is_spellcaster = yes
+			has_character_flag = magickaslots_open
+			NOT = { is_boosting_ste_magicka = yes }
+		}
+		
+		allow = {
+			can_update_magicka_slots = yes
+		}
+		
+		effect = {
+			character_event = { id = ek_magicka.1 }
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { is_mage = yes }
+						trait = mage_1
+					}
+				}
+				add_character_modifier = { name = magicka_boost_ste_1 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_2
+						trait = mage_3
+					}
+				}
+				add_character_modifier = { name = magicka_boost_ste_2 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_4
+						trait = mage_5
+					}
+				}
+				add_character_modifier = { name = magicka_boost_ste_3 duration = -1  }
+			}
+		}
+	}
+	
+	spell_boost_int = {
+		potential = {
+			ai = no
+			is_spellcaster = yes
+			has_character_flag = magickaslots_open
+			NOT = { is_boosting_int_magicka = yes }
+		}
+		
+		allow = {
+			can_update_magicka_slots = yes
+		}
+		
+		effect = {
+			character_event = { id = ek_magicka.1 }
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { is_mage = yes }
+						trait = mage_1
+					}
+				}
+				add_character_modifier = { name = magicka_boost_int_1 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_2
+						trait = mage_3
+					}
+				}
+				add_character_modifier = { name = magicka_boost_int_2 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_4
+						trait = mage_5
+					}
+				}
+				add_character_modifier = { name = magicka_boost_int_3 duration = -1  }
+			}
+		}
+	}
+	
+	spell_boost_lea = {
+		potential = {
+			ai = no
+			is_spellcaster = yes
+			has_character_flag = magickaslots_open
+			NOT = { is_boosting_lea_magicka = yes }
+		}
+		
+		allow = {
+			can_update_magicka_slots = yes
+		}
+		
+		effect = {
+			character_event = { id = ek_magicka.1 }
+			
+			if = {
+				limit = {
+					OR = {
+						NOT = { is_mage = yes }
+						trait = mage_1
+					}
+				}
+				add_character_modifier = { name = magicka_boost_lea_1 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_2
+						trait = mage_3
+					}
+				}
+				add_character_modifier = { name = magicka_boost_lea_2 duration = -1  }
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						trait = mage_4
+						trait = mage_5
+					}
+				}
+				add_character_modifier = { name = magicka_boost_lea_3 duration = -1  }
+			}
+		}
+	}
+}

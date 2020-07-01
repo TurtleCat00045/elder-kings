@@ -1,0 +1,8 @@
+opinion_gifted_skooma = {
+	opinion = 10
+	months = 12
+}
+opinion_gifted_skooma_addict = {
+	opinion = 15
+	months = 12
+}

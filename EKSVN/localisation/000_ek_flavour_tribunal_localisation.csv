@@ -1,0 +1,9 @@
+### Events
+tribunal_flavour.1.d;We assumed the title of Arch-Canon, and are now ready to guide the Dunmer and help them to follow the steps of the Tribunal. Among our first decisions, we need to know if Vvardenfell is to stay out of the reach of the Great Houses, which would let the local live in peace, or if they should be allowed to colonize the area, which would help the Dunmer prosper...;;;;;;;;;;;;;x
+tribunal_flavour.1.optA;Invite the Great Houses in Vvardenfell.;;;;;;;;;;;;;x
+tribunal_flavour.1.optB;Vvardenfell is to be off-limits.;;;;;;;;;;;;;x
+tribunal_flavour.2.d;The old Arch-Canon died, and [From.GetFirstName] now replaces [FromFrom.GetHerHim]. Among [From.GetHerHis] first actions will be choosing if we are allowed the colonize Vvardenfell, or not.\n[From.GetHerHis] decision, and a lot of others, has been taken a couple hours ago, and some representatives have already arrived to let us know.;;;;;;;;;;;;;x
+tribunal_flavour.2.optA;Vvardenfell is open to us!;;;;;;;;;;;;;x
+VVARDENFELL_COLONISATION_ALLOWED_CT;If we are in a Great House Society, we will be able to use our §YClout§! and a large amount of money to petition the Arch-Canon to let us colonize a small territory in Vvardenfell. If he accepts, we will gain a §Ynew holding§! in the county we targetted, which will help us prosper, and could lead to cultural changes in the area, as local tribal Ashlanders could be displaced.;;;;;;;;;;;;;x
+tribunal_flavour.2.optB;We won't be able to colonize Vvardenfell.;;;;;;;;;;;;;x
+VVARDENFELL_COLONISATION_FORBIDDEN_CT;Unless we have a huge amount of §YClout§!, a lot of gold to spare, and the Arch-Canon is very positive towards us, colonization of Vvardenfell will be impossible.;;;;;;;;;;;;;x

@@ -1,0 +1,502 @@
+join_a_guild;Join a Guild;;;;;;;;;;;;;x
+join_a_guild_desc;Join one of the local Guilds stationed in your geographic region. The Fighters Guild and Mages Guild are always accepting new applicants and offer a variety of services such as training in their respective fields of expertise. Each Education (and its matched Attribute) is associated with a specific Guild, and characters will generally gain the most by joining with the Guild most suited to their respective Education.;;;;;;;;;;;;;x
+leave_guild;Return from Guild Work;;;;;;;;;;;;;x
+leave_guild_desc;You may leave active service with a Guild at any time, freeing you from various duties and obligations. You are not expelled by a Guild by exiting its ranks of active personnel, but will lose access to its various services until you return to active duty.;;;;;;;;;;;;;x
+ekguilds20;[From.GetFirstName] approached me and explained that [From.GetSheHe] wants to join the local Fighter's Guild. Naturally there are great risks in warring and adventuring as a career, but [From.GetFirstName] believes that fortune and glory await.;;;;;;;;;;;;;x
+ekguilds20decline;Absolutely not!;;;;;;;;;;;;;x
+ekguilds20accept;Of course you may enlist in their ranks!;;;;;;;;;;;;;x
+ekguilds21;[From.GetFirstName] approached me and explained that [From.GetSheHe] wants to join the Mages Guild. Naturally there are great risks involved with arcane experiments, but [From.GetFirstName] believes that wisdom and power will be within [From.GetHerHis] grasp.;;;;;;;;;;;;;x
+ekguilds21decline;Absolutely not!;;;;;;;;;;;;;x
+ekguilds21accept;Of course you may study in their halls!;;;;;;;;;;;;;x
+ekguilds22;[From.GetFirstName] approached me and explained that [From.GetSheHe] wants to join the Mercantile Guild. Naturally there are great risks involved with costly investments and corporate warfare, but [From.GetFirstName] believes that wealth and respect will be within [From.GetHerHis] grasp.;;;;;;;;;;;;;x
+ekguilds22decline;Absolutely not!;;;;;;;;;;;;;x
+ekguilds22accept;Of course you may study in their halls!;;;;;;;;;;;;;x
+ekguilds23;[From.GetFirstName] approached me and explained that [From.GetSheHe] wants to join the Scenarist Guild. Naturally there are great risks involved with entertaining picky and temperamental patrons, but [From.GetFirstName] believes that riches and recognition will be within [From.GetHerHis] grasp.;;;;;;;;;;;;;x
+ekguilds23decline;Absolutely not!;;;;;;;;;;;;;x
+ekguilds23accept;Of course you may study in their halls!;;;;;;;;;;;;;x
+ekguilds30;There are many Guilds available to join, and each one gives me a chance to hone my skills and travel the world. Which Guild shall I sign on with?;;;;;;;;;;;;;x
+ekguilds30Fighters;The Fighters Guild, a mainstay of Warriors everywhere.;;;;;;;;;;;;;x
+ekguilds30Mages;The Mages Guild, the premier choice of Mages.;;;;;;;;;;;;;x
+ekguilds30Mercantile;The Mercantile Guild, home to Magistrates and merchants.;;;;;;;;;;;;;x
+ekguilds30Scenarist;The Scenarist's Guild, the association of Diplomats and artists.;;;;;;;;;;;;;x
+ekguilds30Decline;I will not join a Guild after all.;;;;;;;;;;;;;x
+ekguilds30Wrap;(More Options);;;;;;;;;;;;;x
+ekguilds40;Is it time to end my current Guild obligations and return home?;;;;;;;;;;;;;x
+ekguilds40Accept;Yes.;;;;;;;;;;;;;x
+ekguilds40Decline;No.;;;;;;;;;;;;;x
+ekguilds50Fighters;Being a member of the Fighters Guild means that I have access to some of the finest trainers and instructors available. With their help, I can receive an education in a variety of advanced specializations.;;;;;;;;;;;;;x
+ekguilds50Mages;Being a member of the Mages Guild means that I have access to some of the finest trainers and instructors available. With their help, I can receive an education in a variety of advanced specializations.;;;;;;;;;;;;;x
+ekguilds50Mercantile;Being a member of the Mercantile Guild means that I have access to some of the finest trainers and instructors available. With their help, I can receive an education in a variety of advanced specializations.;;;;;;;;;;;;;x
+ekguilds50Scenarist;Being a member of the Scenarist Guild means that I have access to some of the finest trainers and instructors available. With their help, I can receive an education in a variety of advanced specializations.;;;;;;;;;;;;;x
+ekguilds50Acrobat;I will learn the ways of the Acrobat.;;;;;;;;;;;;;x
+ekguilds50Assassin;I will learn the ways of the Assassin.;;;;;;;;;;;;;x
+ekguilds50Barbarian;I will learn the ways of the Barbarian.;;;;;;;;;;;;;x
+ekguilds50Bard;I will learn the ways of the Bard.;;;;;;;;;;;;;x
+ekguilds50Battlemage;I will learn the ways of the Battlemage.;;;;;;;;;;;;;x
+ekguilds50Crusader;I will learn the ways of the Crusader.;;;;;;;;;;;;;x
+ekguilds50Healer;I will learn the ways of the Healer.;;;;;;;;;;;;;x
+ekguilds50Knight;I will learn the ways of the Knight.;;;;;;;;;;;;;x
+ekguilds50Monk;I will learn the ways of the Monk.;;;;;;;;;;;;;x
+ekguilds50Nightblade;I will learn the ways of the Nightblade.;;;;;;;;;;;;;x
+ekguilds50Priest;I will learn the ways of the Priest.;;;;;;;;;;;;;x
+ekguilds50Rogue;I will learn the ways of the Rogue.;;;;;;;;;;;;;x
+ekguilds50Savant;I will learn the ways of the Savant.;;;;;;;;;;;;;x
+ekguilds50Scout;I will learn the ways of the Scout.;;;;;;;;;;;;;x
+ekguilds50Sorcerer;I will learn the ways of the Sorcerer.;;;;;;;;;;;;;x
+ekguilds50Spellsword;I will learn the ways of the Spellsword.;;;;;;;;;;;;;x
+ekguilds50Thief;I will learn the ways of the Thief.;;;;;;;;;;;;;x
+ekguilds50Trader;I will learn the ways of the Trader.;;;;;;;;;;;;;x
+ekguilds50Wayfarer;I will learn the ways of the Wayfarer.;;;;;;;;;;;;;x
+ekguilds50Witchhunter;I will learn the ways of the Witchhunter.;;;;;;;;;;;;;x
+ekguilds50Wrap;(More Options);;;;;;;;;;;;;x
+ekguilds50Completed;I have completed all my specialization training.;;;;;;;;;;;;;x
+ekguilds50Decline;I will not focus on any specialization at this time.;;;;;;;;;;;;;x
+ekguilds70;My [From.GetSonDaughter], [From.GetFirstName] has finally returned from [From.GetHerHis] Guild work. [From.GetSheHeCap] learned a lot from [From.GetHerHis] time there and hopes that it will have a positive effect for the rest of [From.GetHerHis] life.;;;;;;;;;;;;;x
+ekguilds70Acknowledge;Welcome home, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguilds75;After learning about my inheritance, I gave my formal resignation from active Guild work and returned home. I learned a lot during my time as a Guild member, and I hope that it has given me the experiences to be a better ruler.;;;;;;;;;;;;;x
+ekguilds75Acknowledge;It's good to be back home.;;;;;;;;;;;;;x
+ekguilds100;Day after day spent training and night after night poring over treatises, tomes and manuals is finally paying off! I am ready to take the next step in my studies and receive formal recognition for my abilities in one of my declared specializations.;;;;;;;;;;;;;x
+ekguilds100AcrobatA;The tallest tower is but a bump on the road to fortune! I am an Acrobat!;;;;;;;;;;;;;x
+ekguilds100AcrobatB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100AssassinA;Death is inescapable, and I accelerate its march! I am an Assassin!;;;;;;;;;;;;;x
+ekguilds100AssassinB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100BarbarianA;I know what it is like to wield true strength! I am a Barbarian!;;;;;;;;;;;;;x
+ekguilds100BarbarianB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100BardA;All Nirn is a stage, and I am one of its finest players! I am a Bard!;;;;;;;;;;;;;x
+ekguilds100BardB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100BattlemageA;Fire, frost and lightning seethe from my fingertips! I am a Battlemage!;;;;;;;;;;;;;x
+ekguilds100BattlemageB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100CrusaderA;Let no foe evade my purifying might! I am a Crusader!;;;;;;;;;;;;;x
+ekguilds100CrusaderB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100HealerA;The power to defeat death is truly the greatest weapon! I am a Healer!;;;;;;;;;;;;;x
+ekguilds100HealerB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100KnightA;I stand for chivalry, and I fight for what is right! I am a Knight!;;;;;;;;;;;;;x
+ekguilds100KnightB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100MonkA;Training makes me a grander weapon than any blade or spell! I am a Monk!;;;;;;;;;;;;;x
+ekguilds100MonkB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100NightbladeA;Magic is deadly, yet so is a sharpened dagger! I am a Nightblade!;;;;;;;;;;;;;x
+ekguilds100NightbladeB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100PriestA;The wisest use of the arcane is for my faith! I am a Priest!;;;;;;;;;;;;;x
+ekguilds100PriestB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100RogueA;No battle is too daunting, and no foe is beyond reason! I am a Rogue!;;;;;;;;;;;;;x
+ekguilds100RogueB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100SavantA;Knowledge is power, and I command boundless knowledge! I am a Savant!;;;;;;;;;;;;;x
+ekguilds100SavantB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100ScoutA;Nature need not be tamed when I am one with it! I am a Scout!;;;;;;;;;;;;;x
+ekguilds100ScoutB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100SorcererA;Arcane secrets abound, and I can unlock them all! I am a Sorcerer!;;;;;;;;;;;;;x
+ekguilds100SorcererB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100SpellswordA;My weapons are magic, and my magic is weaponry! I am a Spellsword!;;;;;;;;;;;;;x
+ekguilds100SpellswordB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100ThiefA;The treasures of the world are mine for the taking! I am a Thief!;;;;;;;;;;;;;x
+ekguilds100ThiefB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100TraderA;I need not make enemies when I can make money! I am a Trader!;;;;;;;;;;;;;x
+ekguilds100TraderB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100WayfarerA;I will never rest on the road that is life! I am a Wayfarer!;;;;;;;;;;;;;x
+ekguilds100WayfarerB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds100WitchhunterA;The destruction of the profane is my calling! I am a Witchhunter!;;;;;;;;;;;;;x
+ekguilds100WitchhunterB;I have realized my potential! It is time to focus my studies elsewhere.;;;;;;;;;;;;;x
+ekguilds110;Countless hours of hard work as a Guild member are paying off. I have gained a greater understanding of my field of study, and am all the better for it.;;;;;;;;;;;;;x
+ekguilds110Acknowledge;Excellent.;;;;;;;;;;;;;x
+ekguilds300Fighters;After returning from my latest successful assignment with the Fighters Guild, I received a sizeable reward of gold coins in recognition of my valor and skill-at-arms.;;;;;;;;;;;;;x
+ekguilds300Mages;After returning from my latest successful assignment with the Mages Guild, I received a sizeable reward of gold coins to encourage further work in the name of the Mages Guild and its ideals.;;;;;;;;;;;;;x
+ekguilds300Acknowledge;Excellent.;;;;;;;;;;;;;x
+quest_fighters_supplies;Supply Run;;;;;;;;;;;;;x
+EKGuildFlavor101;The [Root.Society.GetName] needs some supplies delivered to another guild hall, and since I'm not busy at the moment, was asked if I could make the trip.;;;;;;;;;;;;;x
+EKGuildFlavor102;After a short journey, I arrive at the guild hall and drop off the much-needed supplies, and receive payment and thanks.;;;;;;;;;;;;;x
+EKGuildFlavor102Accept;Great!;;;;;;;;;;;;;x
+quest_fighters_shields;Shield-Making;;;;;;;;;;;;;x
+EKGuildFlavor105;One of the smiths working for the [Root.Society.GetName] has asked for my help in producing shields. A simple matter, but a time-consuming one.;;;;;;;;;;;;;x
+EKGuildFlavor106;I closely listen to the smith's instructions as we make each shield one-by-one. Though the work is tedious, she thanks me for my assistance and assures me that she'll put in a good word for me.;;;;;;;;;;;;;x
+EKGuildFlavor106Accept;Excellent.;;;;;;;;;;;;;x
+ekguildflavor110;In addition to my financial compensation, the Guild has decided to award me with a valuable item from their armory as a token of their appreciation.;;;;;;;;;;;;;x
+ekguildflavor110Acknowledge;Incredible!;;;;;;;;;;;;;x
+ekguildflavor115;Sparring with fellow fighters is an excellent way to hone my fighting skills. Though deaths in our arenas are rare, the duels are never easy, and sometimes quite bloody. Yet it's an exhilarating feeling, especially when I emerge victorious and hear my companions cheering me own.;;;;;;;;;;;;;x
+ekguildflavor115Accept;I am a gladiator!;;;;;;;;;;;;;x
+ekguildflavor115Decline;It's great sport, but there are other things I'd rather do.;;;;;;;;;;;;;x
+ekguildflavor116;Fighting on horseback is a completely different art than fighting on foot, and I've taken to it exceptionally well. I believe I may have found my calling!;;;;;;;;;;;;;x
+ekguildflavor116Accept;I am an equestrian!;;;;;;;;;;;;;x
+ekguildflavor116Decline;Horsemanship is a skill, not a calling.;;;;;;;;;;;;;x
+ekguildflavor117A;Even great warriors are at a disadvantage when their equipment is broken and worn down. Fortunately for me, I have a natural skill at manufacturing and repairing arms and armor.;;;;;;;;;;;;;x
+ekguildflavor117B;Self-sufficiency is key to being a successful assassin. The necessity of repairing and replacing my equipment has helped me grasp the fundamentals of smithing.;;;;;;;;;;;;;x
+ekguildflavor117Accept;I am a blacksmith!;;;;;;;;;;;;;x
+ekguildflavor117Decline;It's a nice talent, but not my interest.;;;;;;;;;;;;;x
+quest_fighters_bear;Unbearable;;;;;;;;;;;;;x
+EKGuildFlavor120;Locals nearby are complaining about a bear that scavenges from their cesspit and is becoming increasingly bold around people. The [Root.Society.GetName] wants me to put the beast down before it hurts someone.;;;;;;;;;;;;;x
+EKGuildFlavor121;I journey to the hamlet and sure enough, the bear is wandering near some houses. I make a commotion to get its attention and it runs towards me. I draw my weapon and ready for battle!;;;;;;;;;;;;;x
+EKGuildFlavor121Accept;For the [Root.Society.GetName]!;;;;;;;;;;;;;x
+EKGuildFlavor122;The bear is mighty, but I triumph over the beast with a fatal blow that kills the animal where it stands. With my task done, I make my return to the guild hall.;;;;;;;;;;;;;x
+EKGuildFlavor122Accept;An excellent fight.;;;;;;;;;;;;;x
+quest_fighters_zombie;Pure Dread;;;;;;;;;;;;;x
+EKGuildFlavor125;The [Root.Society.GetName] has asked me to put down a dread zombie that is wandering around a temple graveyard. No one has been harmed yet, but zombies tend to attack anything on sight so it's a matter of time.;;;;;;;;;;;;;x
+EKGuildFlavor126;When I get to the cemetery, I smell the walking corpse before I see it - a fetid mass of green flesh shuffling about, gurgling and belching incoherently. I make haste in battling the fiend.;;;;;;;;;;;;;x
+EKGuildFlavor126Accept;For the [Root.Society.GetName]!;;;;;;;;;;;;;x
+EKGuildFlavor127;Vicious as it may be, the zombie is no match for me and I take the legs out from under the monster before decapitating it. A priest from the temple rushes outside and thanks me, and I travel back to the guild hall.;;;;;;;;;;;;;x
+EKGuildFlavor127Accept;It was nothing. Really!;;;;;;;;;;;;;x
+quest_fighters_merchant;The Bodyguard;;;;;;;;;;;;;x
+EKGuildFlavor130;A merchant is transporting valuable goods overland and asked the [Root.Society.GetName] for an escort. The [Root.Society.GetName] has offered me the contract to protect him.;;;;;;;;;;;;;x
+EKGuildFlavor131;As I travel with the merchant along the roads, we are stopped by a small group of suspicious-looking armed vagabonds. "It's dangerous to be out here," one of them says. "Really dangerous." They draw their weapons - and so do I.;;;;;;;;;;;;;x
+EKGuildFlavor131Accept;Die, scum!;;;;;;;;;;;;;x
+EKGuildFlavor132;The brigands rush forward and are ferocious foes, but I kill them, one by one. I look over my shoulder to see the merchant safe and sound. The rest of our journey is uneventful, and I receive the utmost gratitude for my assistance.;;;;;;;;;;;;;x
+EKGuildFlavor132Accept;You're welcome.;;;;;;;;;;;;;x
+quest_mages_alchemy;Trouble Brewing;;;;;;;;;;;;;x
+EKGuildFlavor201;Potions are in short supply at the local [Root.Society.GetName] hall. I've been asked to brew some basic potions to refill the store room.;;;;;;;;;;;;;x
+EKGuildFlavor202;Carefully, I measure the ingredients and produce each type of potion, filling up dozens of bottles. In exchange for my work, I'm rewarded with a pouch of gold coins.;;;;;;;;;;;;;x
+EKGuildFlavor202Accept;Excellent.;;;;;;;;;;;;;x
+quest_mages_enchanting;An Enchanting Experience;;;;;;;;;;;;;x
+EKGuildFlavor205;Basic enchanted items such as warding amulets and base rings of health are important parts of any mage's inventory, and [Root.Society.GetName] has asked if I can produce a few for fellow mages.;;;;;;;;;;;;;x
+EKGuildFlavor206;Using some white soul gems and an enchanting station, I produce several simple instances of arcane equipment, and am given some money as payment.;;;;;;;;;;;;;x
+EKGuildFlavor206Accept;Excellent.;;;;;;;;;;;;;x
+ekguildflavor215;The recognition I received earlier was not representative of the pride the [Root.Society.GetName] has in my abilities. As a further reward, they have elected to grant me a rare and valuable item from the Guild Hall's vault.;;;;;;;;;;;;;x
+ekguildflavor215Acknowledge;Incredible!;;;;;;;;;;;;;x
+quest_mages_training;War Magic;;;;;;;;;;;;;x
+EKGuildFlavor220;Some prospective students of magic are visiting the guild hall and would like to learn the basics of magic as self-defense. The [Root.Society.GetName] has offered me the job to teach them.;;;;;;;;;;;;;x
+EKGuildFlavor221A;Today's lesson will be on Alteration - namely, shield spells. One of our clients knows shock magic, so I ask them to launch a lightning bolt at me. I will cast a shock shield spell to minimize the effects thereof.;;;;;;;;;;;;;x
+EKGuildFlavor221B;Today's lesson will be on Conjuration - in this case, summoning a Daedric minion. "Now then," I begin. "The essence of Conjuration is to summon bound - NOT unbound - daedra. Watch closely as I call forth a Clannfear.";;;;;;;;;;;;;x
+EKGuildFlavor221C;Today's lesson will be on Illusion - here, how to soothe a savage beast. In this demonstration, a caged wolf will be unleashed at me. With a calm spell, the animal will be dissuaded from aggression.;;;;;;;;;;;;;x
+EKGuildFlavor221D;Today's lesson will be on Mysticism - and to this end, I will show how one can telekinetically deflect a solid object. I request the visitors to throw a few stones at me. I will use the power of my mind to negate their attacks.;;;;;;;;;;;;;x
+EKGuildFlavor221E;Today's lesson will be on Destruction - namely, fire spells. "Behold," I say. "I will project a sphere of fire that will detonate in an incendiary blast. However, as I am properly attuned to my spell, it will NOT harm me.";;;;;;;;;;;;;x
+EKGuildFlavor221Accept;Let's begin.;;;;;;;;;;;;;x
+EKGuildFlavor222A;The volunteer obliges and casts a lightning bolt at me. I call forth my shock shield and laugh as I shrug off the electricity. Afterwards, I provide insight on how I was able to do this, as my clients listen intently.;;;;;;;;;;;;;x
+EKGuildFlavor222B;A portal opens up in front of me, and out of it falls a vicious-looking but decidedly tame Clannfear. It shows no aggression to anyone in the room. I explain the essence of why this is to my audience, as they take notes.;;;;;;;;;;;;;x
+EKGuildFlavor222C;The furious wolf charges towards me and I unleash a ball of glowing energy that enters the beast's brain, causing it to immediately stop in place. It then peacefully wanders about and is herded into a cage. I explain how this situation is so, as the clients take notes.;;;;;;;;;;;;;x
+EKGuildFlavor222D;The volunteers - perhaps a bit too enthusiastically - throw some rocks my way. Focusing, I catch the stones mid-air with my mind and gingerly take them to the floor. The audiences applauds. I orate on how I performed this feat, and they happily listen.;;;;;;;;;;;;;x
+EKGuildFlavor222E;I summon a ball of flame and throw it from my palm to my feet. The explosion surrounds my person, but I am unscathed to the audience's astonishment. I explain the technique required to perform this, much to their interest.;;;;;;;;;;;;;x
+EKGuildFlavor222Accept;Thank you all for coming!;;;;;;;;;;;;;x
+EKGuildFlavor223A;The volunteer obliges and casts a lightning bolt at me. I call forth my shock shield but I am badly electrocuted in the process. Due to my injury, the class is canceled and my clients leave, quite unhappy.;;;;;;;;;;;;;x
+EKGuildFlavor223B;A portal opens up in front of me, and out of it falls a vicious-looking Clannfear that headbutts me and knocks me to the floor. Before it can kill me, guards swarm the room and kill the monster. Due to my injury, the class is canceled and my clients leave, quite unhappy.;;;;;;;;;;;;;x
+EKGuildFlavor223C;The furious wolf charges towards me and I unleash a ball of glowing energy that enters the beast's brain, but it ignores me and pounces on me. I am nearly mauled to death before another mage kills the creature. Due to my injury, the class is canceled and my clients leave, quite unhappy.;;;;;;;;;;;;;x
+EKGuildFlavor223D;The volunteers - perhaps a bit too enthusiastically - throw some rocks my way. I focus to catch the stones but nothing happens. I am hit by the rocks, one after another, and only after I am badly hurt do the clients understand that something is amiss. Due to my injury, the class is canceled and my clients leave, quite unhappy.;;;;;;;;;;;;;x
+EKGuildFlavor223E;I summon a ball of flame and throw it from my palm to my feet. The explosion surrounds my person and I am badly singed and have to get treated for my burns. Due to my injury, the class is canceled and my clients leave, quite unhappy.;;;;;;;;;;;;;x
+EKGuildFlavor223Accept;That will be all for today...;;;;;;;;;;;;;x
+ekguildflavor225;I just realized that Alchemy is a richly rewarding activity. With just a few simple ingredients and some patience, I can craft potions as powerful as any spells!;;;;;;;;;;;;;x
+ekguildflavor225Accept;I am an Alchemist!;;;;;;;;;;;;;x
+ekguildflavor225Decline;Alchemy is fun, but I have other studies to focus on.;;;;;;;;;;;;;x
+quest_mages_restoration;The Pilgrims' Rest;;;;;;;;;;;;;x
+EKGuildFlavor230;I have a prime opportunity to practice my Restoration magic. Numerous pilgrims are sick or injured from their dangerous overland journeys and have clubbed together to contract the [Root.Society.GetName] to tend to their wounds. I'm told that I can take the job if I wish.;;;;;;;;;;;;;x
+EKGuildFlavor231;Using my knowledge of healing spells, I'm able to treat the maladies of my clients one at a time. Though some of their wounds will take additional time to heal, they still appreciate my effort and one even calls me a lifesaver. I take my payment and return to the guild hall.;;;;;;;;;;;;;x
+EKGuildFlavor231Accept;It was no problem, really.;;;;;;;;;;;;;x
+EKGuildFlavor240;After countless time spent studying the methodology behind summoning and binding servants, I have garnered the knowledge necessary to properly reanimate and command the dead.;;;;;;;;;;;;;x
+EKGuildFlavor240Accept;I am a Necromancer!;;;;;;;;;;;;;x
+quest_merchants_purchases;The Buying Game;;;;;;;;;;;;;x
+EKGuildFlavor300;The [Root.Society.GetName] is in need of someone who can negotiate a purchase with some independent sellers. I've been offered the job to do so.;;;;;;;;;;;;;x
+EKGuildFlavor301A;I arrive at a small farm owned and operated by a yeoman landholder. The farmer has some grain to sell, and the [Root.Society.GetName] has given me a pouch of coins to procure the grain so that it can be resold for profit.;;;;;;;;;;;;;x
+EKGuildFlavor301B;I visit the office of a luxury goods merchant who needs to liquidate some surplus merchandise immediately - a prime chance to buy quality items on the cheap. I bring with me a chest of gold that should cover the expenses.;;;;;;;;;;;;;x
+EKGuildFlavor301C;Armed with a chest of gold provided by the [Root.Society.GetName] I find myself at a lumber camp. The owner has acquired high-quality timber she's willing to sell to us provided we have the funds.;;;;;;;;;;;;;x
+EKGuildFlavor301D;I stop by a salt mine that is in desperate need of new laborers. The [Root.Society.GetName] would be happy to provide some workers in exchange for a modest cut of the mine's salt.;;;;;;;;;;;;;x
+EKGuildFlavor301Accept;Try to talk the seller into a deal.;;;;;;;;;;;;;x
+EKGuildFlavor310;My attempts to convince my client have failed utterly! Instead of getting the best possible deal, the seller has decided to look elsewhere for a sale and thus I must return to my guild hall empty-handed.;;;;;;;;;;;;;x
+EKGuildFlavor310Accept;Curses!;;;;;;;;;;;;;x
+EKGuildFlavor315;I carefully negotiate the purchase arrangement and realize I've netted the [Root.Society.GetName] a nice little profit. My return to the guild hall is greeted with a great deal of appreciation for my efforts.;;;;;;;;;;;;;x
+EKGuildFlavor315Accept;Wonderful!;;;;;;;;;;;;;x
+EKGuildFlavor320;I am busy cleaning old rubbish out of a run-down warehouse the [Root.Society.GetName] recently purchased and is in the process of renovating. Suddenly, I notice a small, glimmering object almost hidden among a pile of rags.;;;;;;;;;;;;;x
+EKGuildFlavor320Accept;What's this?;;;;;;;;;;;;;x
+ekguildflavor325;Making money is exciting...it's even more exciting when I have to risk money to turn a profit!;;;;;;;;;;;;;x
+ekguildflavor325Accept;I am a gambler!;;;;;;;;;;;;;x
+ekguildflavor325Decline;But gambling is wasteful. I'll save my funds.;;;;;;;;;;;;;x
+ekguildflavor330;Every so often, colleagues at the guild office need my help with improving designs for freight transports, even the freight itself. They tell me that I'm skilled at engineering, and in fact, I find it very enjoyable!;;;;;;;;;;;;;x
+ekguildflavor330Accept;I am an engineer!;;;;;;;;;;;;;x
+ekguildflavor330Decline;As fun as it can be, it's too stressful...;;;;;;;;;;;;;x
+quest_scenarist_singer;The Singer;;;;;;;;;;;;;x
+EKGuildFlavor400;The [Root.Society.GetName] has been contracted to provide some musical entertainment at a gathering of landed gentry. I've been offered the job to run this assignment.;;;;;;;;;;;;;x
+EKGuildFlavor401;Everything is going well and our musical performance is well-received. At the end of the party, the host requests we perform last song to close, but one of the musicians has misplaced our songbook! I have to think of something for us to play, and fast!;;;;;;;;;;;;;x
+EKGuildFlavor401OptA;A soothing, classical instrumental.;;;;;;;;;;;;;x
+EKGuildFlavor401OptB;A lively folk tune.;;;;;;;;;;;;;x
+EKGuildFlavor401OptC;A heart-wrenching ballad.;;;;;;;;;;;;;x
+EKGuildFlavor401OptD;A bawdy tavern song.;;;;;;;;;;;;;x
+ekguildflavor405;I lead the rest of the band in performing a traditional instrumental arrangement. It does not offend the party goers, but no one seems to applaud or even notice our efforts! When we return, the guild commends me for at least thinking on my feet and salvaging the performance.;;;;;;;;;;;;;x
+ekguildflavor405Acknowledge;Very well.;;;;;;;;;;;;;x
+ekguildflavor410ScenaristA;The band follows my lead as we perform a rustic folk song. Those attending the party do not take kindly to our efforts, with one decrying our 'base peasant ditty' and the host politely requesting our departure from the event. The guild is most displeased at our failure.;;;;;;;;;;;;;x
+ekguildflavor410ScenaristB;I have the band play a slow, sombre melody, which provides the backdrop to a sad song of lost romances. Those at the party consider it sad - not the song, but our efforts. A few mutter about the 'melodramatic tripe' and we are sent on our way shortly thereafter. The guild is most displeased at our failure.;;;;;;;;;;;;;x
+ekguildflavor410ScenaristC;I lead the band in performing a tremendously ribald tavern song about promiscuous royalty, unfaithful lovers and their misadventures. Halfway through, someone throws a wine glass at one of my Guild-mates, knocking them unconscious and ending our performance. A booing crowd forces us to make a hasty retreat. The guild is most displeased at our failure.;;;;;;;;;;;;;x
+ekguildflavor410Acknowledge;That could have gone better...;;;;;;;;;;;;;x
+ekguildflavor415ScenaristA;The band follows my lead as we perform a rustic folk song. The audience listens intently, as we regale them with verses about the peculiar lives of herdsmen and peasants. After we conclude our song, we receive a warm round of applause, and leave with commendation from our host. The guild is most pleased at our success.;;;;;;;;;;;;;x
+ekguildflavor415ScenaristB;I have the band play a slow, sombre melody, which provides the backdrop to a sad song of lost romances. As the party-goers listen, many of them weep a few tears, and a few who are familiar with the song eventually join in. We receive quite the applause after the song ends, and leave with commendation from our host. The guild is most pleased at our success.;;;;;;;;;;;;;x
+ekguildflavor415ScenaristC;I lead the band in performing a tremendously ribald tavern song about promiscuous royalty, unfaithful lovers and their misadventures. Many of those attending the party consider the song hilarious, with a few of the more intoxicated ones dancing along to the tune. We receive a wide round of applause after the song ends, and leave with commendation from our host. The guild is most pleased at our success.;;;;;;;;;;;;;x
+ekguildflavor415Acknowledge;Thank you! Thank you!;;;;;;;;;;;;;x
+ekguildflavor420;With some of my free time at the Guild Hall, I thought it would be a fine idea to do some painting. And what a wonderful painting it is! I'm rather amazed at how well I captured the verdant greens of the rolling landscape and the delicate blue hue of the afternoon sky...I simply must find something to do with this painting!;;;;;;;;;;;;;x
+ekguildflavor420OptA;I shall keep it for myself.;;;;;;;;;;;;;x
+ekguildflavor420OptB;I will donate it to my local Guild Hall.;;;;;;;;;;;;;x
+ekguildflavor420OptC;I know, I will give it to my spouse as a gift!;;;;;;;;;;;;;x
+ekguildflavor420OptD;I'll sell it to the highest bidder!;;;;;;;;;;;;;x
+ekguildflavor425;My darling [From.GetHusbandWife] [From.GetFirstName] has given me a beautiful landscape painting that [From.GetSheHe] made with [From.GetHerHis] own hands!;;;;;;;;;;;;;x
+ekguildflavor425Acknowledge;What a wonderful gift!;;;;;;;;;;;;;x
+quest_scenarist_tour;Guided Tour;;;;;;;;;;;;;x
+ekguildflavor430;Some tourists visiting [Root.Location.Capital.GetName] would like a tour of the settlement. I've been asked to guide them.;;;;;;;;;;;;;x
+ekguildflavor431A;Over the course of the day, I lead the travelers through town, explaining the significance of various sites and districts. Before I can end the tour, several in the group ask if we can take a detour to go over some of the old monuments in [Root.Location.Capital.GetName].;;;;;;;;;;;;;x
+ekguildflavor431B;Over the course of the day, I lead the travelers through town, explaining the significance of various sites and districts. Before I can end the tour, several in the group ask if we can take a detour to visit the fortified garrison of [Root.Location.Capital.GetName].;;;;;;;;;;;;;x
+ekguildflavor431C;Over the course of the day, I lead the travelers through town, explaining the significance of various sites and districts. Before I can end the tour, several in the group ask if we can take a detour touring the markets of [Root.Location.Capital.GetName].;;;;;;;;;;;;;x
+ekguildflavor431D;Over the course of the day, I lead the travelers through town, explaining the significance of various sites and districts. Before I can end the tour, several in the group ask if we can take a detour and venture into the sewers underneath [Root.Location.Capital.GetName].;;;;;;;;;;;;;x
+ekguildflavor431E;Over the course of the day, I lead the travelers through town, explaining the significance of various sites and districts. Before I can end the tour, several in the group ask if we can take a detour to go over some of the shrines of [Root.Location.Capital.GetName].;;;;;;;;;;;;;x
+ekguildflavor431AcceptA;Of course. To the monuments we shall go!;;;;;;;;;;;;;x
+ekguildflavor431AcceptB;Sure. But remember, do NOT agitate the guards!;;;;;;;;;;;;;x
+ekguildflavor431AcceptC;Please make sure not to buy stolen goods!;;;;;;;;;;;;;x
+ekguildflavor431AcceptD;Into the seedy underbelly of [Root.Location.Capital.GetName] we go!;;;;;;;;;;;;;x
+ekguildflavor431AcceptE;Just make sure you respect the shrines!;;;;;;;;;;;;;x
+ekguildflavor432A;"And this, I remark as we visit one of the statuaries, "Is...actually I'm not really sure who this statue depicts." This is just the first of one of many mistakes I make as my attempt to complete this part of the tour goes awry. By the end of the affair, my party is less than pleased with my sub-par knowledge of the town.";;;;;;;;;;;;;x
+ekguildflavor432B;As we journey into an armed encampment, the rowdy tour group gawks at the town guards, trying to converse with them and ask about the latest military news. This does not go over well and several of the tourists are arrested as spies. My insufficient knowledge of proper behavior around military personnel leads the rest of the tour group to hastily disband.;;;;;;;;;;;;;x
+ekguildflavor432C;At the town market, I escort the tour group as they buy some goods from a group of unusually charismatic merchants. After some time, they begin to talk with one another about how stalls in a nearby village were selling similar items for far less. They chide me for my lack of knowledge about the local markets and once the tour officially ends, are not at all happy at having been swindled.;;;;;;;;;;;;;x
+ekguildflavor432D;I lead the tour group into the sewers underneath town, but we cannot seem to find our way around at all, wading through muck and refuse only to wind up back where we started. The annoyed tourists ask me why I even bothered, and go their separate ways.;;;;;;;;;;;;;x
+ekguildflavor432E;When we visit the shrines, my knowledge of who each shrine depicts are helpful, but my utter lack of understanding about style and symbolism about each shrine leaves the tourists unimpressed. They hastily leave as I continually demonstrate my lack of religious and metaphysical learning.;;;;;;;;;;;;;x
+ekguildflavor432Accept;Confound it!;;;;;;;;;;;;;x
+ekguildflavor433A;I lead the tour group around a collection of statues and monuments honoring some of the town's local heroes. Each one has a story, a narrative, and I regale my clients with each, as they listen intently. Once the tour has concluded, they agree that they've learned a lot and reward me with a good bit of gold as reward for my knowledge.;;;;;;;;;;;;;x
+ekguildflavor433B;As we journey into an armed encampment, the rowdy tour group gawks at the town guards, trying to converse with them and ask about the latest military news. A few nearly get arrested as spies, but I jump in and talk the guards down, using my military knowledge to quickly build rapport with them - they sense that I too am a military [Root.GetManWoman] and allow us to leave unaccosted. The relieved tourists gift me some gold as thanks for my help.;;;;;;;;;;;;;x
+ekguildflavor433C;At the town market, I escort the tour group as they buy some goods from a group of unusually charismatic merchants. I quickly step in to help my clients, taking charge of the bartering and haggling to get the best possible deal from the merchants. The grateful tourists club together and give me a nice share of the gold that I saved them as thanks for my help.;;;;;;;;;;;;;x
+ekguildflavor433D;I lead the tour group into the sewers underneath town, and although the tunnels are dark and winding, we stumble upon hidden passageways and what appears to be an abandoned thieves' den, making it back to our starting point and with hardly any muck on our boots. Once the tour is done, the group gratefully gifts me some shiny gold coins for my efforts.;;;;;;;;;;;;;x
+ekguildflavor433E;When we visit the shrines, my knowledge of who each shrine depicts are helpful, and they are greatly impressed as I identify the stylistic and symbolic nuances of each construction. The tourists appreciate my dedication to the subject and, once the tour has concluded, leave me a tidy some of gold as thanks for my learning.;;;;;;;;;;;;;x
+ekguildflavor433Accept;I hope this journey was enlightening!;;;;;;;;;;;;;x
+ekguildflavor450A;Great music can inspire so much emotion, and fill one with so much energy. And as luck would have it, I'm a natural at making great music! I wonder if I should spend more time performing songs and melodies.;;;;;;;;;;;;;x
+ekguildflavor450Accept;I am a musician!;;;;;;;;;;;;;x
+ekguildflavor450Decline;I like playing music, but there are other things I'd rather do.;;;;;;;;;;;;;x
+ekguildflavor455;One of our most popular pastimes at the Guild Hall is to debate all sorts of philosophical matters. History, politics, current events, the arcane arts, military matters, fashion, and even food! I have found I have a real knack for convincing people to think about things the same way that I do.;;;;;;;;;;;;;x
+ekguildflavor455Accept;I am a Philosopher!;;;;;;;;;;;;;x
+ekguildflavor455Decline;Mastery of philosophy and a gold coin will buy you a cup of warm ale.;;;;;;;;;;;;;x
+ekguildflavor460;Actions speak louder than words, and a painting is the culmination of days, months, or even years of action from an artist. With only a canvas, a brush and a few pigments, I can express thousands of emotions, swirling together in harmony.;;;;;;;;;;;;;x
+ekguildflavor460Accept;Painting is incredible! I must keep at this.;;;;;;;;;;;;;x
+ekguildflavor460Decline;As enjoyable as painting may be, there are other things I must do.;;;;;;;;;;;;;x
+ekguildflavor465;Why is magic so firmly associated with warfare, subterfuge and worship? Why not for entertainment? Dazzling candlelight and magelight, jump spells...there are so many possibilities to use magic just to make the world a little less dull!;;;;;;;;;;;;;x
+ekguildflavor465Accept;I am a magician!;;;;;;;;;;;;;x
+ekguildflavor465Decline;Fun perhaps, but I'll leave magic to the Guild mages.;;;;;;;;;;;;;x
+EKGuildFlavor505Greybeard;Deep in meditation, I reflect on Jurgen Windcaller's victory over the 17 Disputants. Though they wielded might, Jurgen wielded truth, and the truth of the Way of the Voice triumphed over all opposition.;;;;;;;;;;;;;x
+EKGuildFlavor505MothPriest;As I sit in solitude, I focus on the nature of the Elder Scrolls, and that while truth and falsehood are ever-present, the world of man needs from our order the former so that we can so dispense our knowledge.;;;;;;;;;;;;;x
+EKGuildFlavor506Greybeard;In my meditation, I dwell upon the folly of the Dragon Cult, and the apogee of cruelty that it reached under the rule of Alduin and his Dragon Priests. Instead we must strive to follow Kyne's actions and act for the benefit of others.;;;;;;;;;;;;;x
+EKGuildFlavor506MothPriest;Deep in thought, I consider the delicate balance within our order. How the novices depend on the elders for a path to understanding, how the elders depend on the novices to have their needs cared for, and that we must always look out for one another.;;;;;;;;;;;;;x
+EKGuildFlavor507Greybeard;I think about the world that I've left behind to follow the Way of the Voice. The fanciful dalliances of physical passion are but a worthless obstacle to comprehending The Way.;;;;;;;;;;;;;x
+EKGuildFlavor507MothPriest;In my studies, I contemplate how frivolous the outside world is compared to this one. So many lives dominated by physical relationships, oblivious to the ephemeral, soul-filling beauty of the inner fabric of the world around them.;;;;;;;;;;;;;x
+EKGuildFlavor508Greybeard;I ponder about the Seven Years that Jurgen Windcaller spent developing the fundaments of the Way of the Voice. Not even hunger, one of the most primal needs, could cloud his focus.;;;;;;;;;;;;;x
+EKGuildFlavor508MothPriest;Deep in meditation, I realize that physical nourishment is but a small fraction of what the all-encompassing nourishment of the mind can deliver. To focus on the former is to be deprived of the latter.;;;;;;;;;;;;;x
+EKGuildFlavor509Greybeard;As I meditate, I consider the errors made by the Tongues in the days of the First Empire. Though courageous and strong in will, their short-sightedness left their spiritual resolve wanting.;;;;;;;;;;;;;x
+EKGuildFlavor509MothPriest;In meditation, I dwell on the process that each Moth Priest must take to read an Elder Scroll. One must not rush. One must prepare. And one must prepare to prepare, every single day, that one may hope to unlock that which stands before and after us.;;;;;;;;;;;;;x
+EKGuildFlavor510Greybeard;My contemplation brings me to the reality that Greybeards have faced since the foundation of our order. Study of the Way of the Voice is neither simple nor easy, and takes an eternity of effort to perform.;;;;;;;;;;;;;x
+EKGuildFlavor510MothPriest;The rigors of reading an Elder Scroll enter into my mind as I meditate. Every step is a challenge that cannot be shirked, and likewise are our duties to provide for brothers and sisters in our order.;;;;;;;;;;;;;x
+EKGuildFlavor511Greybeard;As I meditate, I digest the nature of the dragons' greatest weakness. Their pride, overcoming all other senses, led them to defy the gods and impose an order that ultimately spurred their demise. Such pride must be avoided.;;;;;;;;;;;;;x
+EKGuildFlavor511MothPriest;Deep in meditation, I reflect on the flaw that is pride, and how it clouds our understanding of that which we read. Pride and preconception go hand-in-hand, and abandoning preconception is the first step into grasping true perception.;;;;;;;;;;;;;x
+EKGuildFlavor505Accept;Indeed...;;;;;;;;;;;;;x
+EKGuildFlavor525;My tireless study of the Voice is bearing fruit. I can sense that I have not only improved my ability to project many Shouts, but more importantly, I have attained a far greater understanding as to the inner meanings of each of them.;;;;;;;;;;;;;x
+EKGuildFlavor525Accept;Su'um ahrk morah!;;;;;;;;;;;;;x
+quest_thieves_theft;Theft for Hire;;;;;;;;;;;;;x
+EKGuildFlavor600;An anonymous client has need of the [Root.Society.GetName]'s services and has offered us a contract. In turn, I've been offered the right to take the contract on as a guild job.;;;;;;;;;;;;;x
+EKGuildFlavor605A;The client has requested a priceless ruby necklace that is in the possession of a veteran adventurer. Surely they won't notice one small trinket missing? When I see my mark, they're wearing the necklace. Perhaps I can quickly snatch it without anyone noticing...;;;;;;;;;;;;;x
+EKGuildFlavor605B;The client needs some not-quite-legal merchandise moved overland. A simple task, as guards tend to leave most people alone. Near my destination, I drive the cart down the road and come to a stream where a few guards are stationed. I just need to act natural and I'm home free.;;;;;;;;;;;;;x
+EKGuildFlavor605C;The client has taken interest in a thoroughbred horse that isn't for sale. In the evening, I sneak into the horse's stables unnoticed and throw a saddle on the beast. Just as we exit the stables I notice few guards patrolling nearby.;;;;;;;;;;;;;x
+EKGuildFlavor605D;The client has a friend rotting in a village jail who needs to be freed post-haste. After I sneak into the destination, I see my target half asleep in a cell. The cell door is locked, but it can be picked.;;;;;;;;;;;;;x
+EKGuildFlavor605E;The client would like to acquire some quality attire from a tailor who is out of their price range. I visit the tailor's shop, carrying a pack full of counterfeit clothing that I will swap with the genuine articles before making a quick escape.;;;;;;;;;;;;;x
+EKGuildFlavor605Accept;Alright...;;;;;;;;;;;;;x
+EKGuildFlavor610A;I attempt to snatch the jewelry off of the adventurer but he sees my hand out of the corner of his eye and holds on to the necklace with one of his own hands. We struggle with one another until several guards come rushing over, weapons drawn. I've been caught red-handed!;;;;;;;;;;;;;x
+EKGuildFlavor610B;"Hold on there," says one of the guards. "Something about you isn't quite right. What have you got here?" The guard pulls up a cloth concealing a case of skooma. "Aha! We've got ourselves a smuggler!";;;;;;;;;;;;;x
+EKGuildFlavor610C;One of the guards looks up and sees me riding the horse. "Why, you're not the lord of this manor!" the guard exclaims. "What are YOU doing here?" Already-nervous but now startled, the horse throws me off its back as I tumble to the ground, surrounded by armed troops.;;;;;;;;;;;;;x
+EKGuildFlavor610D;I go through over a dozen lockpicks but the lock simply will not budge. I'm so absorbed into picking this lock that I don't notice the guards crowding around me. "STOP!" screams one of them. "The jailbreak's over, thief! Now you're the one who'll be behind bars!";;;;;;;;;;;;;x
+EKGuildFlavor610E;Quickly, I unpack the false clothes and switch them with the real merchandise, but I take a little too long and a clerk notices my actions. She calls for the guards, who rush into the shop and surround me, weapons drawn.;;;;;;;;;;;;;x
+EKGuildFlavor610OptA;Pay the court a fine.;;;;;;;;;;;;;x
+EKGuildFlavor610OptB;Serve my sentence.;;;;;;;;;;;;;x
+EKGuildFlavor611;I've just received word that [From.GetBestName] was involved in a legal dispute with some of the local guardsmen. [From.GetSheHe] paid a fine for the trouble, and I have received my share as rightful tax.;;;;;;;;;;;;;x
+EKGuildFlavor611Accept;How odd.;;;;;;;;;;;;;x
+EKGuildFlavor612;I've just received word that [From.GetBestName] was arrested for criminal activity by local guardsmen!;;;;;;;;;;;;;x
+EKGuildFlavor612Accept;Lowlife scum...;;;;;;;;;;;;;x
+EKGuildFlavor612Decline;I believe this is all a big misunderstanding...;;;;;;;;;;;;;x
+EKGuildFlavor615A;I quickly pull the necklace straight off of the adventurer's neck. Bewildered, he looks around for the culprit but I'm already out of sight. I return with the necklace and present it to the [Root.Society.GetName] for my reward.;;;;;;;;;;;;;x
+EKGuildFlavor615B;I keep my cool and none of the guards notice anything unusual. "A fine greeting to you!" one of the guards says as I wave back, smiling. Soon after, I reach the dropoff point and return back to the [Root.Society.GetName] den for payment.;;;;;;;;;;;;;x
+EKGuildFlavor615C;One of the guards recognizes something is amiss but I manage to get the horse to break into a gallop as we quickly leave the manor compound, my face covered all the while. I take the horse to another stable where the client will pick it up and go to the [Root.Society.GetName] hall for my reward.;;;;;;;;;;;;;x
+EKGuildFlavor615D;I quickly pick the lock, greet my rescue target and explain the situation. We sneak out of the jail and go to the [Root.Society.GetName] safe house where I am paid for a job well done.;;;;;;;;;;;;;x
+EKGuildFlavor615E;Quickly, I unpack the false clothes and switch them with the real merchandise, loading it into my pack and slipping out before the clerk working inside the shop notices me. I drop the merch off at the [Root.Society.GetName] den and get my payment.;;;;;;;;;;;;;x
+EKGuildFlavor615Accept;Excellent.;;;;;;;;;;;;;x
+ekguildflavor630A;Being a Thief doesn't just mean taking things. It also means breaking things - locks, doors, bindings, buildings, weapons, and more. I've noticed I have a real knack for doing so.;;;;;;;;;;;;;x
+ekguildflavor630B;Eliminating a target doesn't just mean using a weapon or spell. Sometimes loosening a stone, pulling a few nails out of a railing or sundering a support are far more effective.;;;;;;;;;;;;;x
+ekguildflavor630Accept;I am a saboteur!;;;;;;;;;;;;;x
+ekguildflavor630Decline;It's a useful skill, but not my focus.;;;;;;;;;;;;;x
+ekguildflavor635;The art of theft requires discretion. Taking someone's hard-earned gold or most prized possession isn't much use if someone catches me immediately after. That goes for hauling contraband too. Thankfully, my discretion is par excellence.;;;;;;;;;;;;;x
+ekguildflavor635Accept;I am a smuggler!;;;;;;;;;;;;;x
+ekguildflavor635Decline;Smuggling might be profitable...but it's not really my thing.;;;;;;;;;;;;;x
+quest_dbmt_generic;Assassination;;;;;;;;;;;;;x
+EKGuildFlavor700A;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a musician of decidedly lacking talent. This should be an easy job.;;;;;;;;;;;;;x
+EKGuildFlavor700B;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a graveyard worker who steals from the recently deceased. This should be an easy job.;;;;;;;;;;;;;x
+EKGuildFlavor700C;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a writer suspected of publishing libel. This should be an easy job.;;;;;;;;;;;;;x
+EKGuildFlavor700D;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a lunatic wandering the roads. This should be an easy job.;;;;;;;;;;;;;x
+EKGuildFlavor700E;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a dishonest merchant. She allegedly keeps guards so this might be a slightly challenging job.;;;;;;;;;;;;;x
+EKGuildFlavor700F;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a skooma dealer on the run. Like most of his ilk he's probably armed so this might be a slightly challenging job.;;;;;;;;;;;;;x
+EKGuildFlavor700G;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a bandit who murders people after robbing them. The bandit runs in a gang so this might be a dangerous job.;;;;;;;;;;;;;x
+EKGuildFlavor700H;The [Root.Society.GetName] has offered me a [Root.GetContractWrit] on a witch who lives deep in the wilderness. She's claimed to have skill in conjuration, so this might be a dangerous job.;;;;;;;;;;;;;x
+EKGuildFlavor705A;I arrive at a hamlet wracked by horrid music and meet its creator. \n\n"Well met, friend!" the bard exclaims. "Have you come to soak in my serenade? Is it not a treat for your ears? You approach me so directly. How unusual in this town! Are you...a [Root.GetManWoman] of culture?";;;;;;;;;;;;;x
+EKGuildFlavor705B;I stop by a graveyard at night, where my target is already in the midst of his "work." The man sees me and stops in his tracks. \n\n"Whatever you think I'm trying to do, I'm not. I don't know anything, and I don't know you. You best be on your way back from where you came.";;;;;;;;;;;;;x
+EKGuildFlavor705C;I visit a modest country house and knock on the front door. The door opens up and a tired-looking woman stands before me. \n\n"Yes? What is it?" she asks.;;;;;;;;;;;;;x
+EKGuildFlavor705D;On a lonely road, I am greeted by a merchant and his workers, whose wagon has broken down. "Please, do something about this fellow," the merchant pleads, pointing to the madman. "He threw himself on the road - we had to stop the cart and the front axle split in half. And he won't listen to reason!" I glance over at the maniac who's been spouting nonsense all the while. "Do you see the sky?!" the man says, pointing at a cloud. "Can you not recognize that your demise is laughing at you, ready to pounce on you?!";;;;;;;;;;;;;x
+EKGuildFlavor705E;I enter the merchant's warehouse where she - flanked by two guards - is taking inventory. At my appearance, the merchant and her guards notice me and turn about. The guards step in front of her and she frowns. "And just who are you supposed to be?" she snaps. "Can't you see that I'm busy, and you don't even bother to set up an appointment to speak to one of my clerks? You better have a good reason for being here.";;;;;;;;;;;;;x
+EKGuildFlavor705F;I enter a dim, dusty hovel where my target is said to be living. My entrance is greeted by a pathetic shriek emanating from a trembling figure. \n\n"Please don't kill me!" begs the man. "I'm not in the skooma business anymore! I told you all, I'm not going to even try selling to anyone again. Just...please, please let me go. Have mercy!";;;;;;;;;;;;;x
+EKGuildFlavor705G;A chance upon the bandit encampment, home to my target. All of the occupants draw their weapons to face me. \n\n"Oho, looks like we've got ourselves a hero!" says one of the group. My target, the enforcer, grins and raises a rusty axe. "Normally we have to catch our prey first," she says. "But this one's so charitable! I'll shed one tear when I split your gut open!";;;;;;;;;;;;;x
+EKGuildFlavor705H;Deep in the wilds, I visit a dilapidated hut and I discern a hunched-over figure with a clenched fist. Suddenly the figure turns around and unleashes a spell that summons a fetid, moaning zombie! The light from the spell reveals her wizened face. \n\n"I thought someone would be after me eventually. No matter. You made a mistake coming all the way out here.";;;;;;;;;;;;;x
+EKGuildFlavor720;Upon returning to the [Root.Society.GetName] hall, I receive my payment and recognition of my skill as an assassin.;;;;;;;;;;;;;x
+EKGuildFlavor720AcceptA;Excellent.;;;;;;;;;;;;;x
+EKGuildFlavor720AcceptB;Excellent.;;;;;;;;;;;;;x
+EKGuildFlavor720AcceptC;Excellent.;;;;;;;;;;;;;x
+ekguildrelationships10;Lately my Guild assignments have caused me to spend a lot of time working alongside [potential_guild_friend.GetBestName]. We may not agree on everything, but we always seem to enjoy talking to one another!;;;;;;;;;;;;;x
+ekguildrelationships10Accept;You're a true friend, [potential_guild_friend.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships10Decline;That's great! But I don't really care.;;;;;;;;;;;;;x
+ekguildrelationships15;Whenever I chat with my Guildmate [From.GetBestName], we always get along so well. [From.GetSheHeCap] just mentioned that [From.GetSheHe] considers me a true friend!;;;;;;;;;;;;;x
+ekguildrelationships15Accept;Likewise, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships16;[From.GetFirstName] considers me a friend as well!;;;;;;;;;;;;;x
+ekguildrelationships16Acknowledge;Wonderful!;;;;;;;;;;;;;x
+ekguildrelationships17;[From.GetFirstName] doesn't seem to think we're really friends...;;;;;;;;;;;;;x
+ekguildrelationships17Acknowledge;Oh well.;;;;;;;;;;;;;x
+ekguildrelationships20;Lately my Guild assignments have caused me to spend a lot of time working alongside [potential_guild_friend.GetBestName]. We may not agree on everything, but we always seem to enjoy talking to one another!;;;;;;;;;;;;;x
+ekguildrelationships20Accept;You're a true friend, [potential_guild_friend.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships20Decline;That's great! But I don't really care.;;;;;;;;;;;;;x
+ekguildrelationships25;Whenever I chat with my Guildmate [From.GetBestName], we always get along so well. [From.GetSheHeCap] just mentioned that [From.GetSheHe] considers me a true friend!;;;;;;;;;;;;;x
+ekguildrelationships25Accept;Likewise, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships25Decline;Actually [From.GetFirstName], we're not friends.;;;;;;;;;;;;;x
+ekguildrelationships30;[From.GetFirstName] considers me a friend as well!;;;;;;;;;;;;;x
+ekguildrelationships30Acknowledge;Wonderful!;;;;;;;;;;;;;x
+ekguildrelationships35;[From.GetFirstName] doesn't seem to think we're really friends...;;;;;;;;;;;;;x
+ekguildrelationships35Acknowledge;Oh well.;;;;;;;;;;;;;x
+ekguildrelationships50;I can't stand dealing with my Guildmate [potential_guild_rival.GetBestName]. We almost never see eye-to-eye on anything, which is especially bad since we usually end up working the same assignments. Every waking moment I spend around [potential_guild_rival.GetFirstName] is horrible.;;;;;;;;;;;;;x
+ekguildrelationships50Accept;That's it, [potential_guild_rival.GetFirstName]! I can't stand you anymore!;;;;;;;;;;;;;x
+ekguildrelationships50Decline;I'm not going to let [potential_guild_rival.GetFirstName]'s attitude get to me.;;;;;;;;;;;;;x
+ekguildrelationships55;I never got along well with [From.GetBestName] but now it's getting worse. [From.GetSheHeCap] let me know that [From.GetSheHe] cannot stand the sight of me!;;;;;;;;;;;;;x
+ekguildrelationships55Accept;The feeling is mutual, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships55Decline;Fighting is pointless, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships56;[From.GetFirstName] and I hate one another! If we weren't rivals before, we're certainly rivals now.;;;;;;;;;;;;;x
+ekguildrelationships56Acknowledge;Fine with me!;;;;;;;;;;;;;x
+ekguildrelationships57;[From.GetFirstName] tried to diffuse the situation. Actually, it was a relief knowing that [From.GetSheHe] isn't interested in being my enemy.;;;;;;;;;;;;;x
+ekguildrelationships57Acknowledge;Moving on...;;;;;;;;;;;;;x
+ekguildrelationships60;I can't stand dealing with my Guildmate [potential_guild_rival.GetBestName]. We almost never see eye-to-eye on anything, which is especially bad since we usually end up working the same assignments. Every waking moment I spend around [potential_guild_rival.GetFirstName] is horrible.;;;;;;;;;;;;;x
+ekguildrelationships60Accept;That's it, [potential_guild_rival.GetFirstName]! I can't stand you anymore!;;;;;;;;;;;;;x
+ekguildrelationships60Decline;I'm not going to let [potential_guild_rival.GetFirstName]'s attitude get to me.;;;;;;;;;;;;;x
+ekguildrelationships65;I never got along well with [From.GetBestName] but now it's getting worse. [From.GetSheHeCap] let me know that [From.GetSheHe] cannot stand the sight of me!;;;;;;;;;;;;;x
+ekguildrelationships65Accept;The feeling is mutual, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships65Decline;Fighting is pointless, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships70;[From.GetFirstName] and I hate one another! If we weren't rivals before, we're certainly rivals now.;;;;;;;;;;;;;x
+ekguildrelationships70Acknowledge;Fine with me!;;;;;;;;;;;;;x
+ekguildrelationships75;[From.GetFirstName] tried to diffuse the situation. Actually, it was a relief knowing that [From.GetSheHe] isn't interested in being my enemy.;;;;;;;;;;;;;x
+ekguildrelationships75Acknowledge;Moving on...;;;;;;;;;;;;;x
+ekguildrelationships100;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships100Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships100Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships105;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships105Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships105Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships106;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships106Acknowledge;We best get back to work before anyone notices us.;;;;;;;;;;;;;x
+ekguildrelationships107;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships107Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships110;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships110Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships110Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships125;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships125Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships125Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships130;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships130Acknowledge;We best get back to work before anyone notices us.;;;;;;;;;;;;;x
+ekguildrelationships135;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships135Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships150;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships150Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships150Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships155;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships155Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships155Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships156;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships156Acknowledge;We best get back to work before anyone notices us.;;;;;;;;;;;;;x
+ekguildrelationships157;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships157Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships160;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships160Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships160Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships175;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships175Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships175Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships180;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships180Acknowledge;We best get back to work before anyone notices us.;;;;;;;;;;;;;x
+ekguildrelationships185;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships185Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships200;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships200Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships200Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships205;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships205Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships205Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships206;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships206Acknowledge;Now back to work before anyone gets suspicious...;;;;;;;;;;;;;x
+ekguildrelationships207;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships207Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships210;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships210Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships210Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships225;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships225Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships225Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships230;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships230Acknowledge;Now back to work before anyone gets suspicious...;;;;;;;;;;;;;x
+ekguildrelationships235;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships235Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships250;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships250Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships250Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships255;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships255Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships255Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships256;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships256Acknowledge;Now back to work before anyone gets suspicious...;;;;;;;;;;;;;x
+ekguildrelationships257;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships257Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+ekguildrelationships260;[potential_guild_lover.GetFirstName] and I have been spending a lot of time together as of late, working together whenever we can and sharing meals and conversations when we're off-duty. I can tell that there's a mutual attraction between us.;;;;;;;;;;;;;x
+ekguildrelationships260Accept;I'll make a lewd suggestion to [potential_guild_lover.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships260Decline;[potential_guild_lover.GetSheHeCap]'s not my type.;;;;;;;;;;;;;x
+ekguildrelationships275;[From.GetFirstName] thinks that I'm romantically interested in [From.GetHerHim] and suggested that we express our affections...physically.;;;;;;;;;;;;;x
+ekguildrelationships275Accept;I like that idea, [From.GetFirstName]!;;;;;;;;;;;;;x
+ekguildrelationships275Decline;Flattered, but definitely NOT interested, [From.GetFirstName].;;;;;;;;;;;;;x
+ekguildrelationships280;[From.GetFirstName] and I traveled to a nice, secluded place, and I gave [From.GetHerHim] an even nicer tumble!;;;;;;;;;;;;;x
+ekguildrelationships280Acknowledge;Now back to work before anyone gets suspicious...;;;;;;;;;;;;;x
+ekguildrelationships285;[From.GetFirstName] rejected me! And word travels fast. Now everyone back at the Guild hall won't stop cracking jokes about my failed attempt to seduce [From.GetHerHim]!;;;;;;;;;;;;;x
+ekguildrelationships285Acknowledge;How embarrassing...;;;;;;;;;;;;;x
+EKGuildFlavor510Ansei;I find myself training daily alongside my brothers and sister in our quest for mastery of Hel Shen She Ru, the Way of the Sword. Progress is slow, but if we let our discipline waver we will never attain our goal.;;;;;;;;;;;;;x
+EKGuildFlavor801Ansei;When Ansei of old wandered the land, they would right wrongs and help the citizinry in the name of virtue. It was this adherence to our code of Honor that helped them muster the discipline needed to master the Way. We should strive to be as just as they were.;;;;;;;;;;;;;x
+ekguildflavor450B;While most associate the Sword-Singers with our mastery of the Sword, our predecessors were artists and artisans before they picked up their blades. Lately, I have found myself more in tune with them as I have become engrossed in the study of several forms of music. I wonder if I should continue with this.;;;;;;;;;;;;;x
+EKAnsei100;Lately, I find my mind wandering more and more to the tales of the Hel Ansei of generations past and their mastery of the Shehai Shen She Ru. In this day and age, a select few of the most dedicated individuals can form their Shehai as a pale, ephemeral object, sometimes not even resembling a sword at all. However, in ancient times there were Sword-Saints whose Spirit Blades could cut through men like a scythe through wheat. Legends speak of Ansei of the First Rank undergoing a grueling trial to attain the Second Rank. If I dig enough, I might find enough information to recreate such a trial, and if I succeed, the secrets of the Shehai would be lost no longer.;;;;;;;;;;;;;x
+DEATH_ANSEI_TRY_RANK_TWO;Disappeared trying to rediscover the secrets of the Shehai.;;;;;;;;;;;;;x
+EKAnsei100OPT;Onsi guide me.;;;;;;;;;;;;;x
+shehai_rediscovered;Return of the Sword-Saints;;;;;;;;;;;;;x
+EKAnsei101;My search for information on the trail Ansei undertook to reach the Second Rank has taken me to the ruins of an ancient Yokudan fortress nestled in the mountains of Hammerfell. As I push open the doors leading to the antechamber, I am greeted by dust and silence that has not been disturbed for centuries. I make my way deeper into the citadel, wary of structures that could succumb to the burden of time and crush me. Finally, in a small chamber likely reserved for the Yokeda, I find what I am looking for. Though it might be written in an archaic form of Yoku, the studies I pursued alongside my training will help me overcome this obstacle with relative ease.;;;;;;;;;;;;;x
+EKAnsei101OPT;Now, for the actual trial…;;;;;;;;;;;;;x
+EKAnsei102;My search for information on the trail Ansei undertook to reach the Second Rank has taken me to the ruins of an ancient Yokudan fortress nestled in the mountains of Hammerfell. As I push open the doors leading to the antechamber, I am greeted by dust and silence that has not been disturbed for centuries. I make my way deeper into the citadel, wary of structures that could succumb to the burden of time and crush me. Finally, in a small chamber likely reserved for the Yokeda, I find what I am looking for. Alas, it is written in an ancient form of Yoku that I do not understand, but I have not come this far to just give up. I shall remain here until I can make sense of the writings. My dedication shall not waver.;;;;;;;;;;;;;x
+EKAnsei102OPT;This might take some time…;;;;;;;;;;;;;x
+EKAnsei103;For the trial I had to leave behind my arms and armor, so I did. After days of wandering through scorching heat, I happen upon a small hamlet just beyond the sands. As I refill my waterbags, an alarm sounds. A figure clad in black, surrounded by the walking dead, approaches. I take from the villagers the best blade they have. It is rusted, unbalanced, but with it I cut down many zombies. Then, the brawniest undead yet stands before me. He swings his sword at me, and my blade shatters, breaking in my hands. The brute prepares another swing. As I consign myself to my fate, the thrill of the fight, so familiar a feeling, melts away. In that moment of calm, I reach out to the Shehai, and behold, it is alive, alight with power. The necromancer and his band fall before me. The villagers, awestruck, offer me their thanks, but I refuse. ;;;;;;;;;;;;;x
+EKAnsei103OPT;I must rejoin my brothers and sisters, and share with them my secrets.;;;;;;;;;;;;;x
+search_for_shehai;Shehai Shen She Ru;;;;;;;;;;;;;x
+ansei_try_second_rank;Investigate Shehai's Secrets;;;;;;;;;;;;;x
+ansei_try_second_rank_desc;The secrets of Ansei of the Second Rank have been considered lost for a long time, but perhaps a dedicated Ansei such as yourself might be able to rediscover them.;;;;;;;;;;;;;x
+search_for_shehai_citadel;The Ruined Citadel;;;;;;;;;;;;;x
+shehai_still_uncovered;Death of an Ansei;;;;;;;;;;;;;x
+EKAnsei104;I wander the sands with neither arms nor armor. After days beneath the scorching sun, I approach an oasis to refill my waterbags. Before I can reach the shore, however, I am ambushed by a group of Dunerippers! I grab a sturdy looking piece of wood and do my best to fend them off, but I am hopelessly outmatched. One of the creatures shatters my makeshift weapon with ease. As a last-ditch effort, I reach out to my Shehai. As it forms in my hand, it takes on the shapeless shape as always. One of the Dunerippers lunges at me and grabs my neck in its jaws.;;;;;;;;;;;;;x
+EKAnsei104OPT;Tu'whacca guide me.;;;;;;;;;;;;;x
+attaining_second_rank;Attaining the Second Rank;;;;;;;;;;;;;x
+EKAnsei105;Now that the secrets of the Shehai Shen She Ru have been rediscovered, the path to mastery is clear for all Sword Singers to see. However, that does not mean that walking it will be easier for me than it was for my predecessors - unlocking the true form of the Spirit Sword will require me to put my life at risk. But I am dedicated to see it through,  and with the guidance of the Hel Ansei no Shira, I will succeed.;;;;;;;;;;;;;x
+EKAnsei106;I wander the sands with neither arms nor armor. After days beneath the scorching sun, I approach an oasis to refill my waterbags. Before I can reach the shore, however, I am ambushed by a group of Dunerippers! I grab a sturdy looking piece of wood and do my best to fend them off, but I am hopelessly outmatched. One of the creatures shatters my makeshift weapon with ease. As a last-ditch effort, I reach out to my Shehai. As it forms in my hand, it takes on the form of a blazing sword. It cuts through the Dunerippers with ease, and before long I stand triumphant. ;;;;;;;;;;;;;x
+EKAnsei106OPT;Leki be praised!;;;;;;;;;;;;;x
+EKAnsei107;I wander the sands with neither arms nor armor. After days beneath the scorching sun, I approach an oasis to refill my waterbags. Before I can reach the shore, however, I am ambushed by a group of Dunerippers! I grab a sturdy looking piece of wood and do my best to fend them off, but I am hopelessly outmatched. One of the creatures shatters my makeshift weapon with ease. As a last-ditch effort, I reach out to my Shehai. As it forms in my hand, it takes on the shapeless shape as always. The Dunerippers, upon seeing my ephemeral Shehai, slither away from whence they came.;;;;;;;;;;;;;x
+EKAnsei107OPT;I shall try again.;;;;;;;;;;;;;x
+EKAnseiGlobal;Rumors have reached me about a Sword-Saint who has rediscovered how to use the Shehai. If this is true, the Sword-Singers will become a force to be reckoned with once again.;;;;;;;;;;;;;x
+EKAnseiGlobalOPT;Interesting.;;;;;;;;;;;;;x
+EKGuildFlavor802;My dedicated towards mastering the Hel Shen She Ru has borne fruit. Not only am I becoming faster, stronger, but thanks to my tireless study of the Book of Rings and relentless training regiment, I understand the spirit of the sword itself on a deeper level.;;;;;;;;;;;;;x
+EKGuildFlavor802Accept;Adhere to the style that defeats your opponent.;;;;;;;;;;;;;x
+ekguildflavor115AcceptAnsei;The best techniques are passed on by the survivors.;;;;;;;;;;;;;x
+EKGuildFlavor802AcceptLeader;The best leader is a constant student.;;;;;;;;;;;;;x
+EKAnsei18;I have almost completed my journey through the desert. When I stop by a town to refill my waterbags for the last time, however, the vizier of the local lord rushes toward me. A powerful vampire has taken over the lord's mansion, and he and his family are trapped inside. The guardsmen are too afraid to act, and I might be the only hope they have.;;;;;;;;;;;;;x
+EKAnsei18OPTA;Show me to the palace, Vizier.;;;;;;;;;;;;;x
+### Guild buildings decisions
+ek_construct_fightersguild_building;Build a Fighters Guild Chapter;;;;;;;;;;;;;x
+ek_construct_fightersguild_building_desc;As a member of the Fighters Guild, I can order the construction of a local chapter of the guild here.;;;;;;;;;;;;;x
+ek_construct_fightersguildakavir_building;Build an Iron Hilt Outpost;;;;;;;;;;;;;x
+ek_construct_fightersguildakavir_building_desc;As a member of the Iron Hilt, I can order the construction of a local chapter of the guild here.;;;;;;;;;;;;;x
+ek_construct_companions_building;Build a Companions' Hall;;;;;;;;;;;;;x
+ek_construct_companions_building_desc;As a member of the Mages Guild, I can order the construction of a local chapter of the guild here.;;;;;;;;;;;;;x
+ek_construct_magesguild_building;Build a Mages Guild Chapter;;;;;;;;;;;;;x
+ek_construct_magesguild_building_desc;As a member of the Mages Guild, I can order the construction of a local chapter of the guild here.;;;;;;;;;;;;;x
+ek_construct_magesguildakavir_building;Build a Transcendent Tower;;;;;;;;;;;;;x
+ek_construct_magesguildakavir_building_desc;As a member of the Transcendent Architects, I can order the construction of a local chapter of the guild here.;;;;;;;;;;;;;x
+ek_construct_mercantileguild_building;Build a Administrative Center;;;;;;;;;;;;;x
+ek_construct_mercantileguild_building_desc;As a member of a mercantile organization, I can order the construction of a local chapter of the Mercantile Guild here.;;;;;;;;;;;;;x
+ek_construct_scenaristguild_building;Build a Local Embassy;;;;;;;;;;;;;x
+ek_construct_scenaristguild_building_desc;As a member of a diplomatic organization, I can order the construction of a local chapter of the Scenarist Guild here.;;;;;;;;;;;;;x
+ek_construct_greybeards_building;Build a Greybeard Hermitage;;;;;;;;;;;;;x
+ek_construct_greybeards_building_desc;As a member of the Greybeards, I can order the construction of a local chapter of the Greybeards here.;;;;;;;;;;;;;x
+ek_construct_eldercouncil_guards_building;Build a Palace Guard Barracks;;;;;;;;;;;;;x
+ek_construct_eldercouncil_guards_building_desc;As long as the Elder Council funds a guard for its members, said members of the Elder Council can order the construction of a local Guard Barracks here.;;;;;;;;;;;;;x

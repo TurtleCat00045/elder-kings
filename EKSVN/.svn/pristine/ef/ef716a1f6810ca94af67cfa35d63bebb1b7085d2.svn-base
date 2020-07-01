@@ -1,0 +1,66 @@
+namespace = ek_magicka
+
+character_event = {
+	id = ek_magicka.1
+	desc = ek_magicka.1.d
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_three_taken_slots = yes
+	}
+	
+	fail_trigger_effect = { set_character_flag = updated_magicka_slots }
+	
+	option = {
+		name = ek_magicka.1.dip
+		
+		trigger = { is_boosting_dip_magicka = yes }
+		
+		remove_character_modifier = magicka_boost_dip_1
+		remove_character_modifier = magicka_boost_dip_2
+		remove_character_modifier = magicka_boost_dip_3
+	}
+	
+	option = {
+		name = ek_magicka.1.mar
+		
+		trigger = { is_boosting_mar_magicka = yes }
+		
+		remove_character_modifier = magicka_boost_mar_1
+		remove_character_modifier = magicka_boost_mar_2
+		remove_character_modifier = magicka_boost_mar_3
+	}
+	
+	option = {
+		name = ek_magicka.1.ste
+		
+		trigger = { is_boosting_ste_magicka = yes }
+		
+		remove_character_modifier = magicka_boost_ste_1
+		remove_character_modifier = magicka_boost_ste_2
+		remove_character_modifier = magicka_boost_ste_3
+	}
+	
+	option = {
+		name = ek_magicka.1.int
+		
+		trigger = { is_boosting_int_magicka = yes }
+		
+		remove_character_modifier = magicka_boost_int_1
+		remove_character_modifier = magicka_boost_int_2
+		remove_character_modifier = magicka_boost_int_3
+	}
+	
+	option = {
+		name = ek_magicka.1.lea
+		
+		trigger = { is_boosting_lea_magicka = yes }
+		
+		remove_character_modifier = magicka_boost_lea_1
+		remove_character_modifier = magicka_boost_lea_2
+		remove_character_modifier = magicka_boost_lea_3
+	}
+	
+	after = { set_character_flag = updated_magicka_slots }
+}

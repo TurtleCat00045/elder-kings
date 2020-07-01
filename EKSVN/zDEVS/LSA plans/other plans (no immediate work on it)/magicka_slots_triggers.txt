@@ -1,0 +1,137 @@
+has_one_taken_slots = {
+	custom_tooltip = {
+		text = HAS_ONE_TAKEN_SLOTS_CT
+		calc_true_if = {
+			amount = 1
+			is_boosting_dip_magicka = yes
+			is_boosting_mar_magicka = yes
+			is_boosting_ste_magicka = yes
+			is_boosting_int_magicka = yes
+			is_boosting_lea_magicka = yes
+		}
+	}
+}
+
+has_two_taken_slots = {
+	custom_tooltip = {
+		text = HAS_TWO_TAKEN_SLOTS_CT
+		calc_true_if = {
+			amount = 2
+			is_boosting_dip_magicka = yes
+			is_boosting_mar_magicka = yes
+			is_boosting_ste_magicka = yes
+			is_boosting_int_magicka = yes
+			is_boosting_lea_magicka = yes
+		}
+	}
+}
+
+has_three_taken_slots = {
+	custom_tooltip = {
+		text = HAS_THREE_TAKEN_SLOTS_CT
+		calc_true_if = {
+			amount = 3
+			is_boosting_dip_magicka = yes
+			is_boosting_mar_magicka = yes
+			is_boosting_ste_magicka = yes
+			is_boosting_int_magicka = yes
+			is_boosting_lea_magicka = yes
+		}
+	}
+}
+
+has_all_slots_taken = {
+	custom_tooltip = {
+		text = HAS_ALL_SLOTS_TAKEN_CT
+		is_spellcaster = yes
+		OR = {
+			AND = {
+				OR = {
+					is_mage = no
+					trait = mage_1
+				}
+				has_one_taken_slots = yes
+			}
+			AND = {
+				OR = {
+					trait = mage_2
+					trait = mage_3
+				}
+				has_two_taken_slots = yes
+			}
+			AND = {
+				OR = {
+					trait = mage_4
+					trait = mage_5
+				}
+				has_three_taken_slots = yes
+			}
+		}
+	}
+}				
+
+can_update_magicka_slots = {
+	custom_tooltip = {
+		text = CAN_UPDATE_MAGICKA_SLOTS_CT
+		OR = {
+			NOT = { has_character_flag = updated_magicka_slots }
+			NOT = { has_all_slots_taken = yes }
+			had_character_flag = { flag = updated_magicka_slots days = 1 }
+		}
+	}
+}
+
+is_boosting_dip_magicka = {
+	custom_tooltip = {
+		text =  IS_BOOSTING_DIP_MAGICKA_CT
+		OR = {
+			has_character_modifier = magicka_boost_dip_1
+			has_character_modifier = magicka_boost_dip_2
+			has_character_modifier = magicka_boost_dip_3
+		}
+	}
+}
+
+is_boosting_mar_magicka = {
+	custom_tooltip = {
+		text =  IS_BOOSTING_MAR_MAGICKA_CT
+		OR = {
+			has_character_modifier = magicka_boost_mar_1
+			has_character_modifier = magicka_boost_mar_2
+			has_character_modifier = magicka_boost_mar_3
+		}
+	}
+}
+
+is_boosting_ste_magicka = {
+	custom_tooltip = {
+		text =  IS_BOOSTING_STE_MAGICKA_CT
+		OR = {
+			has_character_modifier = magicka_boost_ste_1
+			has_character_modifier = magicka_boost_ste_2
+			has_character_modifier = magicka_boost_ste_3
+		}
+	}
+}
+
+is_boosting_int_magicka = {
+	custom_tooltip = {
+		text =  IS_BOOSTING_INT_MAGICKA_CT
+		OR = {
+			has_character_modifier = magicka_boost_int_1
+			has_character_modifier = magicka_boost_int_2
+			has_character_modifier = magicka_boost_int_3
+		}
+	}
+}
+
+is_boosting_lea_magicka = {
+	custom_tooltip = {
+		text =  IS_BOOSTING_LEA_MAGICKA_CT
+		OR = {
+			has_character_modifier = magicka_boost_lea_1
+			has_character_modifier = magicka_boost_lea_2
+			has_character_modifier = magicka_boost_lea_3
+		}
+	}
+}

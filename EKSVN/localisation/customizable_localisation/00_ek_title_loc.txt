@@ -1,0 +1,27 @@
+defined_text = {
+	name = GetEmperorGod
+	
+	text = {
+		trigger = { is_female = no }
+		localisation_key = "Emperor-God"
+	}
+	
+	text = {
+		trigger = { is_female = yes }
+		localisation_key = "Empress-Divine"
+	}
+}
+
+defined_text = {
+	name = GetGodGoddess
+	
+	text = {
+		trigger = { is_female = no }
+		localisation_key = "God"
+	}
+	
+	text = {
+		trigger = { is_female = yes }
+		localisation_key = "Goddess"
+	}
+}

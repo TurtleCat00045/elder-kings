@@ -1,0 +1,2146 @@
+#Framework based on mnm_society_decisions events
+
+decisions = {
+	return_to_high_hrothgar = {
+		is_high_prio = yes
+		
+		ai_check_interval = 84
+		
+		potential = {
+			has_character_flag = visited_greybeards #This lets you return to High Hrothgar to rejoin the Greybeards if you previously refused
+			is_in_society = no
+			is_ruler = yes
+			is_indisposed = no
+			is_inaccessible_trigger = no
+			NOT = { trait = pilgrim }
+			NOT = { trait = on_pilgrimage }
+			NOT = {	has_character_flag = preparing_pilgrimage }
+			NOT = {	has_character_flag = meditation }
+			NOT = {	has_character_flag = activated_pilgrimage }
+			NOT = { has_character_flag = revisiting_greybeards }
+			has_submenu_open = no
+		}
+		allow = {
+			war = no
+			prisoner = no
+			scaled_wealth = 0.20
+			age = 16
+		}
+		effect = {
+			scaled_wealth = -0.20
+			add_trait = on_pilgrimage
+			set_character_flag = revisiting_greybeards
+			character_event = { id = ekgreybeards.5 days = 15 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.25
+				trait = cynical
+			}
+			modifier = {  #Monthly randomizer for when AI takes decision (1% chance)
+				factor = 0
+				random = 1
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 100
+				trait = dragonborn
+			}
+			modifier = {
+				factor = 0
+				NOT = { age = 22 }
+			}						
+		}
+	}
+	
+	set_aside_guild_pension = {
+		
+		ai_check_interval = 120
+		
+		potential = {
+			has_character_modifier = ek_society_pension
+			is_indisposed = no
+			is_inaccessible_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+		}
+		allow = {
+		}
+		effect = {
+			remove_character_modifier = ek_society_pension
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				health = 5
+			}
+			modifier = {  #Monthly randomizer for when AI takes decision (1% chance)
+				factor = 0
+				random = 1
+			}
+			modifier = {  #Joining the Greybeards or Moth Priests does not void or threaten the pension
+				factor = 0
+				OR = {
+					society_member_of = greybeards_tamriel
+					society_member_of = moth_priests_tamriel
+				}
+			}
+			modifier = {
+				factor = 2
+				trait = zealous
+			}
+			modifier = {
+				factor = 100
+				trait = dragonborn
+			}
+			modifier = {
+				factor = 10
+				NOT = { age = 50 }
+				is_long_lived = no
+			}
+			modifier = {
+				factor = 2.5
+				NOT = { age = 60 }
+				is_long_lived = no
+			}
+			modifier = {
+				factor = 0.5
+				age = 70
+				is_long_lived = no
+			}
+			modifier = {
+				factor = 10
+				NOT = { age = 180 }
+				is_long_lived = yes
+				is_mer = yes
+			}
+			modifier = {
+				factor = 2.5
+				NOT = { age = 200 }
+				is_long_lived = yes
+				is_mer = yes
+			}
+			modifier = {
+				factor = 0.5
+				age = 250
+				is_long_lived = yes
+				is_mer = yes
+			}
+			modifier = {
+				factor = 20
+				is_long_lived = yes
+				is_mer = no
+			}
+		}
+	}
+}
+
+society_decisions = {
+
+	disable_quests_decision = {
+		
+		ai = no
+		
+		potential = {
+			has_character_flag = society_open
+			is_in_society = yes
+			NOT = { has_character_flag = guild_quests_disabled }
+		}
+		
+		allow = {
+			NOT = { has_character_flag = guild_quests_disabled }
+		}
+		effect = {
+			set_character_flag = guild_quests_disabled
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	enable_quests_decision = {
+		
+		ai = no
+		
+		potential = {
+			has_character_flag = society_open
+			is_in_society = yes
+			has_character_flag = guild_quests_disabled
+		}
+		
+		allow = {
+			has_character_flag = guild_quests_disabled
+		}
+		effect = {
+			clr_character_flag = guild_quests_disabled
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	request_grandmaster_retire = {
+		
+		ai_check_interval = 60
+		
+		potential = {
+			OR = {
+				AND = {
+					society_member_of = fighters_guild_tamriel
+					society_rank == 6
+				}
+				AND = {
+					society_member_of = fighters_guild_akavir
+					society_rank == 6
+				}
+				AND = {
+					society_member_of = companions_tamriel
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = mages_guild_tamriel
+					society_rank == 5
+				}
+				AND = {
+					society_member_of = mages_guild_akavir
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = mercantile_guild_tamriel
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = mercantile_guild_akavir
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = scenarist_guild_tamriel
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = scenarist_guild_akavir
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = thieves_guild_tamriel
+					society_rank == 4
+				}
+				AND = {
+					society_member_of = camonna_tong_tamriel
+					society_rank == 3
+				}
+				AND = {
+					society_member_of = dark_brotherhood_tamriel
+					society_rank == 4
+				}
+				AND = {
+					society_member_of = morag_tong_tamriel
+					society_rank == 3
+				}
+			}
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+		}
+		allow = {
+			wealth = 750
+			NOT = { has_character_flag = requesting_society_retirement }
+			custom_tooltip = {
+				text = society_grandmaster_retirment_not_already_asked_or_denied
+				hidden_tooltip = {
+					OR = {
+						AND = {
+							society_member_of = fighters_guild_tamriel
+							any_society_member = {
+								society_member_of = fighters_guild_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = fighters_guild_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = fighters_guild_akavir
+							any_society_member = {
+								society_member_of = fighters_guild_akavir
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = fighters_guild_akavir
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = companions_tamriel
+							any_society_member = {
+								society_member_of = companions_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = companions_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = mages_guild_tamriel
+							any_society_member = {
+								society_member_of = mages_guild_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = mages_guild_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = mages_guild_akavir
+							any_society_member = {
+								society_member_of = mages_guild_akavir
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = mages_guild_akavir
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = mercantile_guild_tamriel
+							any_society_member = {
+								society_member_of = mercantile_guild_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = mercantile_guild_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = mercantile_guild_akavir
+							any_society_member = {
+								society_member_of = mercantile_guild_akavir
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = mercantile_guild_akavir
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = scenarist_guild_tamriel
+							any_society_member = {
+								society_member_of = scenarist_guild_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = scenarist_guild_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = scenarist_guild_akavir
+							any_society_member = {
+								society_member_of = scenarist_guild_akavir
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = scenarist_guild_akavir
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = thieves_guild_tamriel
+							any_society_member = {
+								society_member_of = thieves_guild_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = thieves_guild_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = camonna_tong_tamriel
+							any_society_member = {
+								society_member_of = camonna_tong_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = camonna_tong_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = dark_brotherhood_tamriel
+							any_society_member = {
+								society_member_of = dark_brotherhood_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = dark_brotherhood_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+						AND = {
+							society_member_of = morag_tong_tamriel
+							any_society_member = {
+								society_member_of = morag_tong_tamriel
+								is_society_grandmaster = no
+								NOT = { has_character_flag = requesting_society_retirement }
+							}
+							any_society_member = {
+								society_member_of = morag_tong_tamriel
+								is_society_grandmaster = yes
+								NOT = { has_character_modifier = denied_retirement_timer }
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_character_flag = requesting_society_retirement
+			wealth = -750
+			if = {
+				limit = {
+					society_member_of = fighters_guild_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = fighters_guild_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = fighters_guild_akavir
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = fighters_guild_akavir
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = companions_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = companions_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = mages_guild_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = mages_guild_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = mages_guild_akavir
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = mages_guild_akavir
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = mercantile_guild_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = mercantile_guild_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = mercantile_guild_akavir
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = mercantile_guild_akavir
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = scenarist_guild_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = scenarist_guild_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = scenarist_guild_akavir
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = scenarist_guild_akavir
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = thieves_guild_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = thieves_guild_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = camonna_tong_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = camonna_tong_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = dark_brotherhood_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = dark_brotherhood_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+			if = {
+				limit = {
+					society_member_of = morag_tong_tamriel
+				}
+				random_society_member = {
+					limit = {
+						society_member_of = morag_tong_tamriel
+						is_society_grandmaster = yes
+					}
+					letter_event = { id = eksocieties.20 days = 3 }
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	study_specialization = {
+		
+		is_high_prio = yes #There's really no reason a person who could be studying a specialization shouldn't be studying a specialization.
+		ai_check_interval = 12
+		
+		potential = {
+			OR = {
+				society_member_of = fighters_guild_tamriel
+				society_member_of = fighters_guild_akavir
+				society_member_of = companions_tamriel
+				society_member_of = ansei_guild_tamriel
+				society_member_of = mages_guild_tamriel
+				society_member_of = mages_guild_akavir
+				society_member_of = mercantile_guild_tamriel
+				society_member_of = mercantile_guild_akavir
+				society_member_of = scenarist_guild_tamriel
+				society_member_of = scenarist_guild_akavir
+				society_member_of = thieves_guild_tamriel
+				society_member_of = camonna_tong_tamriel
+				society_member_of = dark_brotherhood_tamriel
+				society_member_of = morag_tong_tamriel
+				society_member_of = greybeards_tamriel
+				society_member_of = moth_priests_tamriel
+				society_member_of = house_dres_council
+				society_member_of = house_hlaalu_council
+				society_member_of = house_indoril_council
+				society_member_of = house_redoran_council
+				society_member_of = house_telvanni_council
+				society_member_of = house_sadras_council
+				society_member_of = house_sul_council
+				society_member_of = house_veloth_council
+				society_member_of = house_dagoth_council
+				society_member_of = elder_council
+			}
+			has_maxed_specializations = no
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_character_flag = soul_sold }
+			NOT = { has_character_flag = guild_specialization_ongoing }
+			NOT = { has_character_modifier = denied_specialization_timer }
+			OR = {
+				is_undead = no
+				AND = {
+					is_undead = yes
+					trait = vampire
+				}
+			}
+		}
+		effect = {
+			set_character_flag = guild_specialization_ongoing
+			if = {
+				limit = { ai = no }
+				character_event = { id = eksocieties.50 }
+			}
+			if = {
+				limit = { ai = yes }
+				character_event = { id = eksocieties.55 }
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	cancel_specialization = {
+		
+		ai_check_interval = 6000
+		
+		potential = {
+			ai = no
+			OR = {
+				society_member_of = fighters_guild_tamriel
+				society_member_of = fighters_guild_akavir
+				society_member_of = companions_tamriel
+				society_member_of = ansei_guild_tamriel
+				society_member_of = mages_guild_tamriel
+				society_member_of = mages_guild_akavir
+				society_member_of = mercantile_guild_tamriel
+				society_member_of = mercantile_guild_akavir
+				society_member_of = scenarist_guild_tamriel
+				society_member_of = scenarist_guild_akavir
+				society_member_of = thieves_guild_tamriel
+				society_member_of = camonna_tong_tamriel
+				society_member_of = dark_brotherhood_tamriel
+				society_member_of = morag_tong_tamriel
+				society_member_of = greybeards_tamriel
+				society_member_of = moth_priests_tamriel
+				society_member_of = house_dres_council
+				society_member_of = house_hlaalu_council
+				society_member_of = house_indoril_council
+				society_member_of = house_redoran_council
+				society_member_of = house_telvanni_council
+				society_member_of = house_sadras_council
+				society_member_of = house_sul_council
+				society_member_of = house_veloth_council
+				society_member_of = house_dagoth_council
+				society_member_of = elder_council
+			}
+			has_character_flag = guild_specialization_ongoing
+			is_indisposed = no
+			block_general_event_trigger = no
+			has_character_flag = society_open
+			NOT = { has_character_flag = soul_sold }
+			OR = {
+				is_undead = no
+				AND = {
+					is_undead = yes
+					trait = vampire
+				}
+			}
+		}
+		effect = {
+			character_event = { id = eksocieties.70 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	mages_tamriel_allow_necromancy = {
+		
+		ai_check_interval = 36
+		
+		potential = {
+			society_member_of = mages_guild_tamriel
+			is_society_grandmaster = yes
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_global_flag = mages_tamriel_necromancy_allowed }
+			NAND = { #This check is for AI only - they can only change the rules once whereas the player can do so many times
+				ai = yes
+				has_character_flag = mages_tamriel_necromancy_law_set
+			}
+		}
+		
+		allow = {
+			society_currency >= 2500
+		}
+		effect = {
+			change_society_currency = -2500
+			clr_global_flag = mages_tamriel_necromancy_banned
+			set_global_flag = mages_tamriel_necromancy_allowed
+			if = {
+				limit = { ai = yes }
+				set_character_flag = mages_tamriel_necromancy_law_set
+			}
+			narrative_event = { id = eksocieties.200 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+				true_religion_scope = {
+					is_anti_necromancy_religion = yes
+				}
+			}
+		}
+	}
+	mages_tamriel_ban_necromancy = {
+		
+		ai_check_interval = 36
+		
+		potential = {
+			society_member_of = mages_guild_tamriel
+			is_society_grandmaster = yes
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_global_flag = mages_tamriel_necromancy_banned }
+			NAND = { #This check is for AI only - they can only change the rules once whereas the player can do so many times
+				ai = yes
+				has_character_flag = mages_tamriel_necromancy_law_set
+			}
+		}
+		
+		allow = {
+			society_currency >= 2500
+		}
+		effect = {
+			change_society_currency = -2500
+			clr_global_flag = mages_tamriel_necromancy_allowed
+			set_global_flag = mages_tamriel_necromancy_banned
+			
+			if = {
+				limit = { ai = yes }
+				set_character_flag = mages_tamriel_necromancy_law_set
+			}
+			narrative_event = { id = eksocieties.201 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+				true_religion_scope = {
+					is_necromancy_religion = yes
+				}
+			}
+		}
+	}
+	
+	mages_akavir_allow_necromancy = {
+		
+		ai_check_interval = 36
+		
+		potential = {
+			society_member_of = mages_guild_akavir
+			is_society_grandmaster = yes
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_global_flag = mages_akavir_necromancy_allowed }
+			NAND = { #This check is for AI only - they can only change the rules once whereas the player can do so many times
+				ai = yes
+				has_character_flag = mages_akavir_necromancy_law_set
+			}
+		}
+		
+		allow = {
+			society_currency >= 2500
+		}
+		effect = {
+			change_society_currency = -2500
+			clr_global_flag = mages_akavir_necromancy_banned
+			set_global_flag = mages_akavir_necromancy_allowed
+			if = {
+				limit = { ai = yes }
+				set_character_flag = mages_akavir_necromancy_law_set
+			}
+			narrative_event = { id = eksocieties.205 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+				true_religion_scope = {
+					is_anti_necromancy_religion = yes
+				}
+			}
+		}
+	}
+	mages_akavir_ban_necromancy = {
+		
+		ai_check_interval = 36
+		
+		potential = {
+			society_member_of = mages_guild_akavir
+			is_society_grandmaster = yes
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_global_flag = mages_akavir_necromancy_banned }
+			NAND = { #This check is for AI only - they can only change the rules once whereas the player can do so many times
+				ai = yes
+				has_character_flag = mages_akavir_necromancy_law_set
+			}
+		}
+		
+		allow = {
+			society_currency >= 2500
+		}
+		effect = {
+			change_society_currency = -2500
+			clr_global_flag = mages_akavir_necromancy_allowed
+			set_global_flag = mages_akavir_necromancy_banned
+			
+			if = {
+				limit = { ai = yes }
+				set_character_flag = mages_akavir_necromancy_law_set
+			}
+			narrative_event = { id = eksocieties.206 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+				true_religion_scope = {
+					is_necromancy_religion = yes
+				}
+			}
+		}
+	}
+	
+	mages_study_necromancy = {
+		
+		ai_check_interval = 12
+		
+		potential = {
+			OR = {
+				AND = {
+					society_member_of = mages_guild_tamriel
+					has_global_flag = mages_tamriel_necromancy_allowed
+				}
+				AND = {
+					society_member_of = mages_guild_akavir
+					has_global_flag = mages_akavir_necromancy_allowed
+				}
+			}
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			
+			NOR = {
+				trait = necromancer
+				has_character_flag = studying_necromancy
+			}
+		}
+		
+		allow = {
+			society_currency >= 1000
+		}
+		effect = {
+			change_society_currency = -1000
+			set_character_flag = studying_necromancy
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				trait = zealous
+				true_religion_scope = {
+					is_anti_necromancy_religion = yes
+				}
+			}
+		}
+	}
+	
+	mitigate_blindness = {
+		
+		ai_check_interval = 36
+		
+		potential = {
+			society_member_of = moth_priests_tamriel
+			society_rank = 3
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_character_flag = soul_sold }
+			NOR = {
+				has_character_flag = mitigating_blindness
+				has_character_modifier = mitigating_blindness
+			}
+			OR = {
+				trait = blind
+				trait = blinded
+			}
+			OR = {
+				is_undead = no
+				AND = {
+					is_undead = yes
+					trait = vampire
+				}
+			}
+		}
+		
+		allow = {
+			society_currency >= 300
+		}
+		effect = {
+			change_society_currency = -300
+			set_character_flag = mitigating_blindness
+			character_event = { id = ekmothpriests.10 days = 90 random = 15 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	study_an_elder_scroll = {
+		potential = {
+			society_member_of = moth_priests_tamriel
+			society_rank = 2
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_character_flag = soul_sold }
+			NOR = {
+				has_character_flag = moth_study_scroll
+				has_character_modifier = moth_scroll_cooldown
+				trait = blind
+				trait = blinded
+			}
+			OR = {
+				is_undead = no
+				AND = {
+					is_undead = yes
+					trait = vampire
+				}
+			}
+		}
+		allow = {
+			society_currency >= 150
+		}
+		effect = {
+			change_society_currency = -150
+			set_character_flag = moth_study_scroll
+			character_event = { id = ekmothpriests.20 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+	}
+	
+	hire_trained_assassin = {
+		only_rulers = yes
+		
+		ai_check_interval = 36
+		
+		potential = {
+			OR = {
+				AND = {
+					society_member_of = dark_brotherhood_tamriel
+					society_rank = 4
+				}
+				AND = {
+					society_member_of = morag_tong_tamriel
+					society_rank = 3
+				}
+			}
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_character_flag = soul_sold }
+		}
+		allow = {
+			society_currency >= 500
+		}
+		effect = {
+			change_society_currency = -500
+			character_event = { id = eksecretive.10 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 10
+				society_currency >= 3000
+			}
+		}
+	}
+	
+	hire_trained_thief = {
+		only_rulers = yes
+		
+		ai_check_interval = 36
+		
+		potential = {
+			OR = {
+				AND = {
+					society_member_of = thieves_guild_tamriel
+					society_rank = 4
+				}
+				AND = {
+					society_member_of = camonna_tong_tamriel
+					society_rank = 3
+				}
+			}
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_character_flag = soul_sold }
+		}
+		allow = {
+			society_currency >= 500
+		}
+		effect = {
+			change_society_currency = -500
+			character_event = { id = eksecretive.15 }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 10
+				society_currency >= 3000
+			}
+		}
+	}
+	
+	claim_shadowmere = {
+	
+		ai_check_interval = 36
+		
+		potential = {
+			society_member_of = dark_brotherhood_tamriel
+			society_rank = 5
+			is_indisposed = no
+			block_general_event_trigger = no
+			OR = {
+				has_character_flag = society_open
+				ai = yes
+			}
+			NOT = { has_character_flag = soul_sold }
+			NOT = { has_global_flag = shadowmere_active }
+		}
+		allow = {
+			society_currency >= 2500
+		}
+		effect = {
+			change_society_currency = -2500
+			add_artifact = mount_horse_shadowmere
+			set_global_flag = shadowmere_active
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.1
+			}
+			modifier = {
+				factor = 10
+				society_currency >= 3000
+			}
+		}
+	}
+}
+
+targetted_decisions = {
+
+	join_the_fighters_guild_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = fighters_guild_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = fighters_guild_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_fighters_guild_akavir = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = fighters_guild_akavir
+		}
+		allow = {}
+		effect = {
+			join_society = fighters_guild_akavir
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_companions_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = companions_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = companions_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_ansei_guild_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = ansei_guild_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = ansei_guild_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_mages_guild_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = mages_guild_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = mages_guild_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_mages_guild_akavir = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = mages_guild_akavir
+		}
+		allow = {}
+		effect = {
+			join_society = mages_guild_akavir
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_mercantile_guild_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = mercantile_guild_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = mercantile_guild_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_mercantile_guild_akavir = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = mercantile_guild_akavir
+		}
+		allow = {}
+		effect = {
+			join_society = mercantile_guild_akavir
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_scenarist_guild_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = scenarist_guild_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = scenarist_guild_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_scenarist_guild_akavir = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = scenarist_guild_akavir
+		}
+		allow = {}
+		effect = {
+			join_society = scenarist_guild_akavir
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_greybeards_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = greybeards_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = greybeards_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_moth_priests_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = moth_priests_tamriel
+		}
+		allow = {}
+		effect = {
+			join_society = moth_priests_tamriel
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_dark_brotherhood_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			society_member_of = dark_brotherhood_tamriel
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = dark_brotherhood_tamriel
+		}
+		allow = {
+			FROM = { 
+				society_rank >= 4
+				society_currency >= 1500
+			}
+		}
+		effect = {
+			join_society = dark_brotherhood_tamriel
+			FROM = {
+				change_society_currency = -1500
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_morag_tong_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			society_member_of = morag_tong_tamriel
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = morag_tong_tamriel
+		}
+		allow = {
+			FROM = { 
+				society_rank >= 3
+				society_currency >= 1500
+			}
+		}
+		effect = {
+			join_society = morag_tong_tamriel
+			FROM = {
+				change_society_currency = -1500
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_thieves_guild_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			society_member_of = thieves_guild_tamriel
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = thieves_guild_tamriel
+		}
+		allow = {
+			FROM = { 
+				society_rank >= 4
+				society_currency >= 1500
+			}
+		}
+		effect = {
+			join_society = thieves_guild_tamriel
+			FROM = {
+				change_society_currency = -1500
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+	join_the_camonna_tong_tamriel = {
+		filter = home_court
+		ai_target_filter = home_court
+		
+		ai_check_interval = 36
+		
+		from_potential = {
+			is_playable = yes
+			society_member_of = camonna_tong_tamriel
+			NOT = { has_character_flag = spellbook_open }
+		}
+		potential = {
+			can_join_society = camonna_tong_tamriel
+		}
+		allow = {
+			FROM = { 
+				society_rank >= 3
+				society_currency >= 1500
+			}
+		}
+		effect = {
+			join_society = camonna_tong_tamriel
+			FROM = {
+				change_society_currency = -1500
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = { #Should help keep society size more manageable
+				factor = 0
+				NOR = {
+					is_friend = FROM
+					is_lover = FROM
+					is_close_relative = FROM
+				}
+			}
+			
+			modifier = { #Just to slow it down a little
+				factor = 0.05
+			}
+		}
+	}
+}
+
+settlement_decisions = {
+	### Based on the warrior lodge power
+
+	ek_construct_fightersguild_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = fighters_guild_tamriel
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_fightersguild_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_fightersguild_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_fightersguild_0
+		}
+	}
+	
+	ek_construct_fightersguildakavir_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = fighters_guild_akavir
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_fightersguildakavir_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_fightersguildakavir_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_fightersguildakavir_0
+		}
+	}
+	
+	ek_construct_companions_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = companions_tamriel
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_companions_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_companions_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_companions_0
+		}
+	}
+	
+	ek_construct_magesguild_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = mages_guild_tamriel
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_magesguild_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_magesguild_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_magesguild_0
+		}
+	}
+	
+	ek_construct_magesguildakavir_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = mages_guild_akavir
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_magesguildakavir_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_magesguildakavir_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_magesguildakavir_0
+		}
+	}
+	
+	ek_construct_mercantileguild_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			OR = {
+				society_member_of = mercantile_guild_tamriel
+				society_member_of = mercantile_guild_akavir
+				society_member_of = elder_council
+			}
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_mercantileguild_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_mercantileguild_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_mercantileguild_0
+		}
+	}
+	
+	ek_construct_scenaristguild_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			OR = {
+				society_member_of = scenarist_guild_tamriel
+				society_member_of = scenarist_guild_akavir
+			}
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_scenaristguild_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_scenaristguild_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_scenaristguild_0
+		}
+	}
+	
+	ek_construct_greybeards_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = greybeards_tamriel
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_greybeards_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_greybeards_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_greybeards_0
+		}
+	}
+	
+	ek_construct_eldercouncil_guards_building = {
+		ai_check_interval = 80 #check only once every 80 months.
+		filter = owned
+		ai_target_filter = owned
+		is_high_prio = yes
+		
+		from_potential = {
+			always = no
+			is_playable = yes
+			is_nomadic = no
+			is_adult = yes
+			higher_tier_than = BARON
+			
+			society_member_of = elder_council
+			
+			OR = {
+				has_global_flag = ec_funding_guards_full
+				has_global_flag = ec_funding_guards_light
+			}
+		}
+		
+		potential = {
+			holder_scope = { character = FROM }
+			holding_type = castle
+			building_holding_is_tower = no
+			
+			NOT = { has_building = ca_eldercouncil_guards_0 }
+		}
+		
+		allow = {
+			FROM = { has_society_currency_minor_trigger = yes }
+			NOT = { has_building = ca_eldercouncil_guards_0 }
+		}
+		
+		effect = {
+			FROM = { detract_society_currency_minor_effect = yes }
+			add_building = ca_eldercouncil_guards_0
+		}
+	}
+}
